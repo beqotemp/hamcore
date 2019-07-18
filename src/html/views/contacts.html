@@ -1,0 +1,60 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+
+<section id="contacts" class="contacts">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-12">
+				<span class="contacts__title">
+					Контакты
+				</span>
+			</div>
+		</div>
+		<div class="contacts__body">
+			<div class="row">			
+				<div class="col-xl-6 d-flex">
+					<div class="contacts__map cole">
+						<img src="img/items/map.png" alt="">	
+					</div>
+					
+				</div>
+				<div class="col-xl-4 offset-xl-1 d-flex">
+					<div class="d-flex flex-column cole">
+						<div class="contacts__number d-flex flex-column">
+							<span class="contacts__phone">
+								<a href="">+7 (985) 513-40-34</a>
+							</span>
+							<span class="contacts__small">
+								Телефон
+							</span>
+						</div>
+						<div class="contacts__address-block d-flex flex-column">
+							<span class="contacts__address">Москва, Южнопортовая 21с7</span>
+							<span class="contacts__small">
+								Адрес
+							</span>
+						</div>
+						<div class="contacts__mail d-flex flex-column">
+							<span class="contacts__email">
+								<a href="">info@hamcore.com</a>
+							</span>
+							<span class="contacts__small">
+								Адрес Email
+							</span>
+						</div>
+						<div class="contacts__opening-hours-block d-flex flex-column">
+							<span class="contacts__opening-hours">
+								08:00-17:00, Пн-Пт
+							</span>
+							<span class="contacts__small">
+								Часы работы
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html'))() %>

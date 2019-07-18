@@ -8,7 +8,199 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>Hamcore</title>
   </head>
-  <body class="Site"> 
+  <body class="Site">
+  	<header>
+		<!-- Desctop-nav -->
+  		<div class="desctop-navigation">
+			<div class="desctop-navigation__first-lvl">
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-lg-2 col-xl-2">
+  							<div class="desctop-navigation__introduction d-flex flex-row align-items-center">
+  								<div class="desctop-navigation__logo">
+  									<img src="img/items/nav-logo.png" alt="">
+  								</div>
+								<div class="desctop-navigation__heading d-flex flex-column">
+									<span class="desctop-navigation__title">
+										Hamcore
+									</span>
+									<span class="desctop-navigation__subtitle">
+										Принтеры и расходники
+									</span>
+								</div>
+  							</div>
+  						</div>
+  						<div class="col-lg-7 col-xl-7">
+  							<div class="desctop-navigation__navigation d-flex align-items-center">
+  								<ul>
+  									<li><a href="#">О магазине </a></li>
+  									<li><a href="#">Доставка </a></li>
+  									<li><a href="#">Оплата </a></li>
+  									<li><a href="#">Контакты </a></li>
+  									<li><a href="#">Отзывы </a></li>
+  									<li><a href="#">Новости и статьи </a></li>
+  								</ul>
+  							</div>
+  						</div>
+						<div class="desctop-navigation__contacts">
+							<span>8 (977) 644-29-76</span>
+  						</div>
+						<div class="desctop-navigation__sign-in-up d-flex flex-row">
+							<a href="#">Регистрация</a>
+							<span>/</span>
+							<a href="#">Вход</a>
+						</div>
+  					</div>
+  				</div>
+  			</div>
 
+  			<div class="desctop-navigation__second-lvl">
+  				<div class="container">
+  					<div class="row d-flex align-items-center">
+  						<div class="col-lg-2 col-xl-2">
+							<div class="desctop-navigation__catalog-triggers d-flex flex-row align-items-center">
+								<span id="menu-btn" class="desctop-navigation__catalog-burger">
+									<svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
+									  <path
+									        class="line top"
+									        d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+									  <path
+									        class="line middle"
+									        d="m 70,50 h -40" />
+									  <path
+									        class="line bottom"
+									        d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+									</svg>
+								</span>
+								<span class="desctop-navigation__catalog-burger-title">Каталог товаров</span>
+							</div>
+  						</div>
+  						<div class="col-lg-3 col-xl-4 no-r-padding no-l-xl-padding">
+	  						<div class="desctop-navigation__search-block">
+								<form class="">
+									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path></svg>
+									<input class="desctop-navigation__search" type="search" placeholder="Search" aria-label="Search">
+								</form>
+							</div>
+						</div>
+						<div class="desctop-navigation__category-nav">
+							<ul>
+								<li><a href="#">Принтеры</a></li>
+								<li><a href="#">Расходники</a></li>
+								<li><a href="#">Опции</a></li>
+								<li><a href="#">Запчасти</a></li>
+							</ul>
+						</div>
+						<div class="desctop-navigation__favorite">
+							<span class="desctop-navigation__favorite-count">5</span>
+							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
+						</div>
+						<div class="desctop-navigation__basket-block">
+							<a href="#" class="desctop-navigation__basket-btn">
+								<div class="desctop-navigation__basket-btn-background"></div>
+								<span class="desctop-navigation__basket-title">Корзина</span>
+							</a>
+						</div>
+  					</div>
+  				</div>
+				<div class="menu-body">
+			  		<div class="container">
+			  			<div class="row">
+			  				<div class="col-xl-3">
+			  					<div class="menu-body__item">
+			  						<div class="menu-body__title">
+										<div class="menu-body__icon">
+											<img src="img/svg/printer.svg" alt="">
+										</div>
+			  							<div class="menu-body__heading">
+			  								Принтеры
+			  							</div>
+			  						</div>
+			  						<div class="menu-body__list">
+			  							<ul>
+			  								<li><a href="#">Все</a></li>
+			  								<li><a href="#">Текстильный</a></li>
+			  								<li><a href="#">Пищевой</a></li>
+			  								<li><a href="#">Сувенирный</a></li>
+			  								<li><a href="#">УФ принтер</a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<div class="col-xl-3">
+			  					<div class="menu-body__item">
+			  						<div class="menu-body__title">
+			  							<div class="menu-body__icon">
+											<img src="img/svg/tint.svg" alt="">
+										</div>
+			  							<div class="menu-body__heading">
+			  								Расходники
+			  							</div>
+			  						</div>
+			  						<div class="menu-body__list">
+			  							<ul>
+			  								<li><a href="#">Все</a></li>
+			  								<li><a href="#">Картриджи</a></li>
+			  								<li><a href="#">Бумага</a></li>
+			  								<li><a href="#">Печатные головки</a></li>
+			  								<li><a href="#">Чистящие средства</a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<div class="col-xl-3">
+			  					<div class="menu-body__item">
+			  						<div class="menu-body__title">
+			  							<div class="menu-body__icon">
+											<img src="img/svg/sliders-v.svg" alt="">
+										</div>
+			  							<div class="menu-body__heading">
+			  								Опции
+			  							</div>
+			  						</div>
+			  						<div class="menu-body__list">
+			  							<ul>
+			  								<li><a href="#">Все</a></li>
+			  								<li><a href="#">Для текстильных</a></li>
+			  								<li><a href="#">Для  плоттерных</a></li>
+			  								<li><a href="#">Для пищевых</a></li>
+			  								<li><a href="#">Для сувенирных</a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<div class="col-xl-3">
+			  					<div class="menu-body__item">
+			  						<div class="menu-body__icon">
+										<img src="img/svg/cog.svg" alt="">
+									</div>
+			  						<div class="menu-body__title">
+			  							<div class="menu-body__heading">
+			  								Запчасти
+			  							</div>
+			  						</div>
+			  						<div class="menu-body__list">
+			  							<ul>
+			  								<li><a href="#">Все</a></li>
+			  								<li><a href="#">Для принтеров</a></li>
+			  								<li><a href="#">Для катриджей</a></li>
+			  								<li><a href="#">Барабаны</a></li>
+			  								<li><a href="#">Валы магнитные</a></li>
+			  								<li><a href="#">Тонер заправки</a></li>
+			  								<li><a href="#">Чернила для заправки</a></li>
+			  							</ul>
+			  						</div>
+			  					</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  	</div>
+
+  			</div>
+  		</div>
+
+		<!-- Mobile-nav -->
+  	</header>
+<main class="Site-content">
 
  

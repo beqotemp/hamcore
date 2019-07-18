@@ -1,0 +1,399 @@
+<%= _.template(require('./../includes/second-header.html'))() %>
+
+
+<section id="basket-page" class="basket-page">
+	<div class="container">
+		<div class="basket-page__menu">
+			<div class="row">
+				<div class="col-xl-12">
+					<ul class="nav" id="myTab" role="tablist">
+					  <li class="nav-item basket-page__menu-item">
+					    <a class="nav-link active basket-page__link" id="my-basket-tab" data-toggle="tab" href="#my-basket" role="tab" aria-controls="my-basket" aria-selected="true">Моя корзина</a>
+					  </li>
+					  <li class="nav-item basket-page__menu-item">
+					    <a class="nav-link basket-page__link" id="basket-favorite-tab" data-toggle="tab" href="#basket-favorite" role="tab" aria-controls="basket-favorite" aria-selected="false">Отложенные товары</a>
+					  </li>
+					  <li class="nav-item basket-page__menu-item">
+					    <a class="nav-link basket-page__link" id="my-orders-tab" data-toggle="tab" href="#my-orders" role="tab" aria-controls="my-orders" aria-selected="false">Мои заказы</a>
+					  </li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+		<div class="basket-page__body">
+			<div class="tab-content my-basket__tab-content" id="myTabContent">
+				<!-- tab -->
+				<div class="tab-pane fade show active my-basket__tab" id="my-basket" role="tabpanel" aria-labelledby="my-basket-tab">
+					<div class="my-basket" style="display:none;">
+						<!-- Item start -->
+				  		<div class="my-basket__accessories-item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="my-basket__accessories-desc d-flex flex-column">
+				  						<span class="my-basket__accessories-heading">Hamcoke Brookesia</span>
+				  						<span class="my-basket__accessories-intro">Принтер, Текстильный</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+				  					<div class="my-basket__accessories-price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+				  					<div class="my-basket__accessories-counter d-flex flex-row">
+				  						<div class="my-basket__box">
+											<span class="my-basket__minus"></span>
+				  						</div>
+										<span>
+										1
+										</span>
+										<div class="my-basket__box">
+											<span class="my-basket__plus"></span>
+				  						</div>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-favorite">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+									<div class="my-basket__remove-button ml-auto">
+										<span class="my-basket__remove-button__svg"></span>
+									</div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+						<!-- Item start -->
+				  		<div class="my-basket__accessories-item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="my-basket__accessories-desc d-flex flex-column">
+				  						<span class="my-basket__accessories-heading">Hamcoke Brookesia</span>
+				  						<span class="my-basket__accessories-intro">Принтер, Текстильный</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+				  					<div class="my-basket__accessories-price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+				  					<div class="my-basket__accessories-counter d-flex flex-row">
+				  						<div class="my-basket__box">
+											<span class="my-basket__minus"></span>
+				  						</div>
+										<span>
+										1
+										</span>
+										<div class="my-basket__box">
+											<span class="my-basket__plus"></span>
+				  						</div>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-favorite">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+									<div class="my-basket__remove-button ml-auto">
+										<span class="my-basket__remove-button__svg"></span>
+									</div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+						<!-- Item start -->
+				  		<div class="my-basket__accessories-item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="my-basket__accessories-desc d-flex flex-column">
+				  						<span class="my-basket__accessories-heading">Hamcoke Brookesia</span>
+				  						<span class="my-basket__accessories-intro">Принтер, Текстильный</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+				  					<div class="my-basket__accessories-price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+				  					<div class="my-basket__accessories-counter d-flex flex-row">
+				  						<div class="my-basket__box">
+											<span class="my-basket__minus"></span>
+				  						</div>
+										<span>
+										1
+										</span>
+										<div class="my-basket__box">
+											<span class="my-basket__plus"></span>
+				  						</div>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-favorite">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+									<div class="my-basket__remove-button ml-auto">
+										<span class="my-basket__remove-button__svg"></span>
+									</div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+					</div>
+					<div class="empty-basket">
+						<div class="empty-basket__title">
+							Ваша корзина пуста
+						</div>
+						<div class="empty-basket__picture">
+							<img src="img/svg/unsuccessful.svg" alt="">
+						</div>
+						<div class="empty-basket__subtitle">
+							<p>
+								Для добавления товаров в корзину <br><a href="#">перейдите в каталог</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- tab -->
+				<div class="tab-pane fade show my-basket__tab" id="basket-favorite" role="tabpanel" aria-labelledby="basket-favorite-tab">
+					<div class="basket-favorite" style="display: none;">
+						<!-- Item start -->
+				  		<div class="my-basket__accessories-item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="my-basket__accessories-desc d-flex flex-column">
+				  						<span class="my-basket__accessories-heading">Hamcoke Brookesia</span>
+				  						<span class="my-basket__accessories-intro">Принтер, Текстильный</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+				  					<div class="my-basket__accessories-price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+				  					<div class="my-basket__accessories-counter d-flex flex-row">
+				  						<div class="my-basket__box">
+											<span class="my-basket__minus"></span>
+				  						</div>
+										<span>
+										1
+										</span>
+										<div class="my-basket__box">
+											<span class="my-basket__plus"></span>
+				  						</div>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+									<div class="my-basket__remove-button ml-auto">
+										<span class="my-basket__remove-button__svg"></span>
+									</div>
+				  				</div>
+				  				<div class="product-card__add-button basket-btn status" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+						<!-- Item start -->
+				  		<div class="my-basket__accessories-item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="my-basket__accessories-picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="my-basket__accessories-desc d-flex flex-column">
+				  						<span class="my-basket__accessories-heading">Hamcoke Brookesia</span>
+				  						<span class="my-basket__accessories-intro">Принтер, Текстильный</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+				  					<div class="my-basket__accessories-price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+				  					<div class="my-basket__accessories-counter d-flex flex-row">
+				  						<div class="my-basket__box">
+											<span class="my-basket__minus"></span>
+				  						</div>
+										<span>
+										1
+										</span>
+										<div class="my-basket__box">
+											<span class="my-basket__plus"></span>
+				  						</div>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+									<div class="my-basket__remove-button ml-auto">
+										<span class="my-basket__remove-button__svg"></span>
+									</div>
+				  				</div>
+				  				<div class="product-card__add-button basket-btn status" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+					</div>
+					<div class="empty-basket">
+						<div class="empty-basket__title">
+							У вас нет отложенных товаров
+						</div>
+						<div class="empty-basket__picture">
+							<img src="img/svg/unsuccessful.svg" alt="">
+						</div>
+						<div class="empty-basket__subtitle">
+							<p>
+								Для добавления товаров в корзину <br><a href="#">перейдите в каталог</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- tab -->	
+				<div class="tab-pane fade show my-basket__tab" id="my-orders" role="tabpanel" aria-labelledby="basket-favorite-tab">
+					<div class="basket-orders">
+						<!-- Item start -->
+				  		<div class="basket-orders__item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="basket-orders__picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="basket-orders__desc d-flex flex-column">
+				  						<span class="basket-orders__heading">Заказ #23112</span>
+				  						<span class="basket-orders__intro">Транспортной службой ‘AIRflow’</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-2 d-flex align-items-center no-l-padding">
+				  					<div class="basket-orders__desc d-flex flex-column">
+				  						<span class="basket-orders__second-heading">Трек номер отслеживания</span>
+				  						<span class="basket-orders__track">RU23123с1231sd231</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex align-items-center">
+				  					<div class="basket-orders__price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-2 d-flex align-items-center justify-content-center">
+									<div class="basket-orders__open-btn">
+										<a href="#">Открыть заказ</a>
+									</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-2 col-xl-3 d-flex align-items-center">
+					  				<div class="product-card__track-order">
+										<a class="sign-up__enter" href="#">
+											<span>Отследить посылку</span>
+											<img src="img/svg/btn-arrow.svg" alt="">
+										</a>
+									</div>
+								</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+						<!-- Item start -->
+				  		<div class="basket-orders__item">
+				  			<div class="row">
+				  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+				  					<div class="basket-orders__picture">
+				  						<img src="img/products/accessories/first.png" alt="">
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+				  					<div class="basket-orders__desc d-flex flex-column">
+				  						<span class="basket-orders__heading">Заказ #23112</span>
+				  						<span class="basket-orders__intro">Транспортной службой ‘AIRflow’</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-7 col-md-4 col-lg-3 col-xl-2 d-flex align-items-center no-l-padding">
+				  					<div class="basket-orders__desc d-flex flex-column">
+				  						<span class="basket-orders__second-heading">Трек номер отслеживания</span>
+				  						<span class="basket-orders__track">RU23123с1231sd231</span>
+				  					</div>
+				  				</div>
+				  				<div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex align-items-center">
+				  					<div class="basket-orders__price">
+				  						<span>130 000 <img class="svg-ruble" src="img/svg/ruble.svg" alt=""></span>
+				  					</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-2 d-flex align-items-center justify-content-center">
+									<div class="basket-orders__open-btn">
+										<a href="#">Открыть заказ</a>
+									</div>
+				  				</div>
+				  				<div class="col-1 col-1 col-md-1 col-lg-2 col-xl-3 d-flex align-items-center">
+					  				<div class="product-card__track-order">
+										<a class="sign-up__enter" href="#">
+											<span>Отследить посылку</span>
+											<img src="img/svg/btn-arrow.svg" alt="">
+										</a>
+									</div>
+								</div>
+				  			</div>
+				  		</div>
+				  		<!-- Item start END-->
+					</div>
+					<div class="empty-basket">
+						<div class="empty-basket__title">
+							У вас нет заказов
+						</div>
+						<div class="empty-basket__picture">
+							<img src="img/svg/unsuccessful.svg" alt="">
+						</div>
+						<div class="empty-basket__subtitle">
+							<p>
+								Вы можете оформить заказ на странице <br><a href="#">моя корзина</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html'))() %>
+
+

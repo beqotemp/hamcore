@@ -1,0 +1,93 @@
+<%= _.template(require('./../includes/second-header.html'))() %>
+
+
+<section id="regpay-page" class="regpay-page">
+	<div class="container">
+		<div class="basket-page__menu">
+			<div class="row">
+				<div class="col-xl-12">
+					<ul class="nav" id="myTab" role="tablist">
+					  <li class="nav-item basket-page__menu-item">
+					    <a class="nav-link active basket-page__link" id="my-basket-tab" data-toggle="tab" href="#reg-info" role="tab" aria-controls="my-basket" aria-selected="true">Заполнение данных</a>
+					  </li>
+					  <li class="nav-item basket-page__menu-item">
+					    <a class="nav-link basket-page__link" id="basket-favorite-tab" data-toggle="tab" href="#paying-order" role="tab" aria-controls="basket-favorite" aria-selected="false">Оплата заказа</a>
+					  </li>
+					  <li class="nav-item basket-page__menu-item">
+					    <a class="nav-link basket-page__link" id="my-orders-tab" data-toggle="tab" href="#congratulations" role="tab" aria-controls="my-orders" aria-selected="false">Заказ успешно совершен</a>
+					  </li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+		<div class="basket-page__body">
+			<div class="tab-content my-basket__tab-content" id="myTabContent">
+				<!-- tab -->
+				<div class="tab-pane fade show active my-basket__tab" id="reg-info" role="tabpanel" aria-labelledby="my-basket-tab">
+					<div class="reg-info">
+						<div class="row">
+							<div class="col-xl-5">
+								<div class="reg-info__registration">
+									<div class="reg-info__heading">
+										<span class="reg-info__title">
+											Оформление заказа
+										</span>
+									</div>
+									<div class="reg-info__form">
+										<form action="">
+											<div class="sign-up__form-item d-flex flex-column">
+												<label for="signUpName">ФИО <span class="small-desk">(как в паспорте)</span></label>
+				    							<input type="text" class="sign-up__input" id="regInfoName" placeholder="Александр">
+											</div>
+											<div class="sign-up__form-item d-flex flex-column">
+												<label for="signUpName">Телефон</label>
+				    							<input type="text" class="sign-up__input" id="regInfoPhone" placeholder="+7 (967) 644-28-89">
+											</div>
+											<div class="sign-up__form-item d-flex flex-column">
+												<label for="signUpEmail">E-mail</label>
+				    							<input type="email" class="sign-up__input" id="regInfoEmail" aria-describedby="emailHelp" placeholder="info@hamkore.ru">
+											</div>
+											<div class="sign-up__form-item d-flex flex-column">
+												<label for="signUpName">Город</label>
+				    							<input type="text" class="sign-up__input" id="regInfoCity" placeholder="Москва">
+											</div>
+											<div class="sign-up__form-item d-flex flex-column">
+												<label for="signUpName">Адрес доставки</label>
+				    							<input type="text" class="sign-up__input" id="regInfoAddress" placeholder="Москва">
+											</div>
+											<div class="sign-up__form-item d-flex flex-row">
+												<input type="checkbox" aria-label="Checkbox for following text input">
+												<label for="signUpName">Адрес доставки</label>
+				    							<!-- <input type="text" class="sign-up__input" id="regInfoAddress" placeholder="Москва"> -->
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-6 offset-xl-1">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- tab -->
+				<div class="tab-pane fade show my-basket__tab" id="paying-order" role="tabpanel" aria-labelledby="basket-favorite-tab">
+					<div class="basket-favorite">
+						2
+					</div>
+				</div>
+				<!-- tab -->	
+				<div class="tab-pane fade show my-basket__tab" id="congratulations" role="tabpanel" aria-labelledby="basket-favorite-tab">
+					<div class="basket-orders">
+						3
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html'))() %>
+
+

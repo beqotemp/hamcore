@@ -1,0 +1,124 @@
+<%= _.template(require('./../includes/header.html'))() %>
+
+<!-- Авторизация -->
+<section id="sign" class="sign" style="display: none;">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-5 offset-xl-1">
+				<div class="sign-in">
+					<div class="sign-in__heading">
+						<span class="sign-in__title">Вход в личный кабинет</span>
+					</div>
+					<div class="sign-in__body">
+						<form action="">
+							<div class="sign-in__form-item d-flex flex-column">
+								<label for="signInEmail">E-mail</label>
+    							<input type="email" class="sign-in__input" id="signInEmail" aria-describedby="emailHelp" placeholder="info@hamkore.ru">
+							</div>
+							<div class="sign-in__form-item d-flex flex-column">
+								<label for="signInPassword">Пароль</label>
+    							<input type="password" class="sign-in__input" id="signInPassword" placeholder="********">
+							</div>
+						</form>
+					</div>
+					<div class="sign-in__buttons d-flex flex-row align-items-center">
+						<a class="sign-in__enter" href="#">
+							<span>Вход</span>
+							<img src="img/svg/btn-arrow.svg" alt="">
+						</a>
+						<a class="sign-in__remember-pass" href="#">Забыли пароль?</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-5 offset-xl-1">
+				<div class="havet-account">
+					<div class="havet-account__heading">
+						<span class="havet-account__title">Еще нет аккаунта?</span>
+					</div>
+					<div class="havet-account__button">
+						<a class="havet-account__btn" href="#">
+							Зарегестрироваться
+							<span class="havet-account__btn-svg"></span>
+							
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Регистрация -->
+<section id="sign" class="sign" style="display:none">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-5 offset-xl-1">
+				<div class="sign-up">
+					<div class="sign-up__heading">
+						<span class="sign-up__title">Регистрация</span>
+					</div>
+					<div class="sign-up__body">
+						<form action="">
+							<div class="sign-up__form-item d-flex flex-column">
+								<label for="signUpName">Ваше имя</label>
+    							<input type="text" class="sign-up__input" id="signUpPassword" placeholder="Александр">
+							</div>
+							<div class="sign-up__form-item d-flex flex-column">
+								<label for="signUpEmail">E-mail</label>
+    							<input type="email" class="sign-up__input" id="signUpEmail" aria-describedby="emailHelp" placeholder="info@hamkore.ru">
+							</div>
+							<div class="sign-up__form-item d-flex flex-column">
+								<label for="signUpPassword">Пароль</label>
+    							<input type="password" class="sign-up__input" id="signUpPassword" placeholder="********">
+							</div>
+						</form>
+					</div>
+					<div class="sign-up__buttons d-flex flex-row align-items-center">
+						<a class="sign-up__enter" href="#">
+							<span>Зарегестрироваться</span>
+							<img src="img/svg/btn-arrow.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-5 offset-xl-1">
+				<div class="have-account">
+					<div class="have-account__heading">
+						<span class="have-account__title">У вас уже есть аккаунт?</span>
+					</div>
+					<div class="have-account__button">
+						<a class="have-account__btn" href="#">
+							Вход
+							<span class="have-account__btn-svg"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Конграчулейшенс -->
+<section id="sign-ready" class="sign-ready">
+	<div class="container">
+		<div class="row">
+			<div class="sign-ready__wrapper">
+				<div class="sign-ready__heading">
+					<span class="sign-ready__title">
+						Вы успешно зарегистрировались
+					</span>
+				</div>
+				<div class="sign-ready__picture">
+					<img src="img/items/reg.png" class="img-fluid" alt="">
+				</div>
+				<div class="sign-ready__subtitle">
+					<p>На email вам отправлено письмо с подтверждением регистрации.</p>
+				</div>
+				<div class="sign-ready__button">
+					<a href="#" class="sign-ready__btn">
+						Вход
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<%= _.template(require('./../includes/footer.html'))() %>

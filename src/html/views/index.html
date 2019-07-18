@@ -70,9 +70,11 @@
 		</div>
 		<div class="popular-products__cards">
 			<div class="row">
+				<!-- card -->
 				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
 					<div class="product-card cole">
-						<div class="product-card__picture" style="background-image: url(img/products/first.png);">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
 							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
 							</div>
 						</div>
@@ -80,7 +82,7 @@
 							<div class="product-card__title d-flex flex-row">
 								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
 								<span class="product-card__favorite ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
 								</span>
 							</div>
 							<div class="product-card__specifications">
@@ -98,19 +100,27 @@
 							<div class="d-flex flex-row align-items-center">
 								<span class="product-card__price">
 									130 000
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-ruble-sign fa-w-12"><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z" class=""></path></svg>
+									<img src="img/svg/ruble.svg" alt="">
 								</span>
-								<div class="product-card__add-button ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- card END-->
 
-								<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
 					<div class="product-card cole">
-						<div class="product-card__picture" style="background-image: url(img/products/first.png);">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
 							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
 							</div>
 						</div>
@@ -118,7 +128,7 @@
 							<div class="product-card__title d-flex flex-row">
 								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
 								<span class="product-card__favorite ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
 								</span>
 							</div>
 							<div class="product-card__specifications">
@@ -136,91 +146,112 @@
 							<div class="d-flex flex-row align-items-center">
 								<span class="product-card__price">
 									130 000
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-ruble-sign fa-w-12"><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z" class=""></path></svg>
+									<img src="img/svg/ruble.svg" alt="">
 								</span>
-								<div class="product-card__add-button ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- card END-->
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
 
-								<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
-					<div class="product-card cole">
-						<div class="product-card__picture" style="background-image: url(img/products/first.png);">
-							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
-							</div>
-						</div>
-						<div class="product-card__body">
-							<div class="product-card__title d-flex flex-row">
-								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
-								<span class="product-card__favorite ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
-								</span>
-							</div>
-							<div class="product-card__specifications">
-								<div class="product-card__item d-flex flex-row">
-									<span class="product-card__item-name">Цвета:</span>
-									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
-								</div>
-								<div class="product-card__item d-flex flex-row">
-									<span class="product-card__item-name">Гарантия:</span>
-									<span class="product-card__item-number ml-auto">3 года</span>
-								</div>
-							</div>
-						</div>
-						<div class="product-card__footer">
-							<div class="d-flex flex-row align-items-center">
-								<span class="product-card__price">
-									130 000
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-ruble-sign fa-w-12"><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z" class=""></path></svg>
-								</span>
-								<div class="product-card__add-button ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-								<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
-					<div class="product-card cole">
-						<div class="product-card__picture" style="background-image: url(img/products/first.png);">
-							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
-							</div>
-						</div>
-						<div class="product-card__body">
-							<div class="product-card__title d-flex flex-row">
-								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
-								<span class="product-card__favorite ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
-								</span>
-							</div>
-							<div class="product-card__specifications">
-								<div class="product-card__item d-flex flex-row">
-									<span class="product-card__item-name">Цвета:</span>
-									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
-								</div>
-								<div class="product-card__item d-flex flex-row">
-									<span class="product-card__item-name">Гарантия:</span>
-									<span class="product-card__item-number ml-auto">3 года</span>
-								</div>
-							</div>
-						</div>
-						<div class="product-card__footer">
-							<div class="d-flex flex-row align-items-center">
-								<span class="product-card__price">
-									130 000
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-ruble-sign fa-w-12"><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z" class=""></path></svg>
-								</span>
-								<div class="product-card__add-button ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 
 			</div>
 		</div>
@@ -232,15 +263,18 @@
 	<div class="container">		
 		<div class="mp-printers__title d-flex flex-row align-items-center">
 			<span class="mp-printers__heading">Принтеры</span>
-			<div class="mp-printers__button ml-auto">
+			<div class="mp-printers__button ml-auto desktop">
 				<a href="#">Все принтеры</a>
 			</div>
 		</div>
 		<div class="mp-printers__cards">
 			<div class="row">
+
+				<!-- card -->
 				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
 					<div class="product-card cole">
-						<div class="product-card__picture" style="background-image: url(img/products/first.png);">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
 							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
 							</div>
 						</div>
@@ -248,7 +282,7 @@
 							<div class="product-card__title d-flex flex-row">
 								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
 								<span class="product-card__favorite ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
 								</span>
 							</div>
 							<div class="product-card__specifications">
@@ -266,17 +300,166 @@
 							<div class="d-flex flex-row align-items-center">
 								<span class="product-card__price">
 									130 000
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-ruble-sign fa-w-12"><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z" class=""></path></svg>
+									<img src="img/svg/ruble.svg" alt="">
 								</span>
-								<div class="product-card__add-button ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<!-- card END-->
 
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+
+				<div class="col-12">
+					<div class="mp-printers__button mobile d-flex justify-content-center">
+						<a href="#">Все принтеры</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -284,15 +467,17 @@
 	<div class="container">		
 		<div class="mp-consumables__title d-flex flex-row align-items-center">
 			<span class="mp-consumables__heading">Расходники</span>
-			<div class="mp-consumables__button ml-auto">
+			<div class="mp-consumables__button ml-auto desktop">
 				<a href="#">Все расходники</a>
 			</div>
 		</div>
 		<div class="mp-printers__cards">
 			<div class="row">
+				<!-- card -->
 				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
 					<div class="product-card cole">
-						<div class="product-card__picture" style="background-image: url(img/products/first.png);">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
 							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
 							</div>
 						</div>
@@ -300,7 +485,7 @@
 							<div class="product-card__title d-flex flex-row">
 								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
 								<span class="product-card__favorite ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
 								</span>
 							</div>
 							<div class="product-card__specifications">
@@ -318,13 +503,163 @@
 							<div class="d-flex flex-row align-items-center">
 								<span class="product-card__price">
 									130 000
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="ruble-sign" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-ruble-sign fa-w-12"><path fill="currentColor" d="M245.712 287.809c80.296 0 138.288-50.323 138.288-128.803C384 81.125 326.009 32 245.712 32H108c-6.627 0-12 5.373-12 12v204H12c-6.627 0-12 5.373-12 12v16c0 6.627 5.373 12 12 12h84v58H12c-6.627 0-12 5.373-12 12v14c0 6.627 5.373 12 12 12h84v84c0 6.627 5.373 12 12 12h19.971c6.627 0 12-5.373 12-12v-84H308c6.627 0 12-5.373 12-12v-14c0-6.627-5.373-12-12-12H139.971v-58.191h105.741zM139.971 71.594h104.643c59.266 0 98.14 31.979 98.14 87.215 0 55.818-38.873 88.96-98.777 88.96H139.971V71.594z" class=""></path></svg>
+									<img src="img/svg/ruble.svg" alt="">
 								</span>
-								<div class="product-card__add-button ml-auto">
-									<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+				<!-- card END-->
+				
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+
+				<!-- card -->
+				<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+					<div class="product-card cole">
+						<div class="product-card__picture">
+							<img src="img/products/first.png" alt="">
+							<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+							</div>
+						</div>
+						<div class="product-card__body">
+							<div class="product-card__title d-flex flex-row">
+								<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+								<span class="product-card__favorite ml-auto">
+									<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+								</span>
+							</div>
+							<div class="product-card__specifications">
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Цвета:</span>
+									<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+								</div>
+								<div class="product-card__item d-flex flex-row">
+									<span class="product-card__item-name">Гарантия:</span>
+									<span class="product-card__item-number ml-auto">3 года</span>
+								</div>
+							</div>
+						</div>
+						<div class="product-card__footer">
+							<div class="d-flex flex-row align-items-center">
+								<span class="product-card__price">
+									130 000
+									<img src="img/svg/ruble.svg" alt="">
+								</span>
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- card END-->
+				
+				<div class="col-12">
+					<div class="mp-consumables__button ml-auto mobile d-flex justify-content-center">
+						<a href="#">Все расходники</a>
 					</div>
 				</div>
 			</div>
@@ -347,12 +682,12 @@
 							<!-- item -->
 							<div class="mp-secondary__item">
 								<div class="row no-gutters">
-									<div class="col-2">
+									<div class="col-3 col-sm-2 col-md-2 col-xl-2">
 										<div class="mp-secondary__item-picture">
 											<img src="img/products/options/first.png" alt="">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-7 col-sm-5 col-md-4 col-xl-4">
 										<div class="mp-secondary__item-desc">
 											<span class="mp-secondary__item-heading">
 												Чернила Revcol
@@ -362,14 +697,17 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2 special-offset">
+									<div class="d-none d-sm-block col-sm-2 col-md-2 col-xl-2 special-offset">
 										<div class="mp-secondary__item-price special-offset">
 											<span>543 Р</span>
 										</div>
 									</div>
-									<div class="col-2 special-offset-second">
+									<div class="col-1 col-md-2 col-xl-2 special-offset-second d-flex">
 										<div class="mp-secondary__item-add">
-											<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<div class="mp-secondary__add-button basket-btn" onclick="this.classList.toggle('active')">
+												<span class="mp-secondary__add-button__svg"></span>
+											</div>
+											<!-- <img src="img/svg/light-add.svg" alt=""> -->
 										</div>
 									</div>
 								</div>
@@ -378,12 +716,12 @@
 							<!-- item -->
 							<div class="mp-secondary__item">
 								<div class="row no-gutters">
-									<div class="col-2">
+									<div class="col-3 col-sm-2 col-md-2 col-xl-2">
 										<div class="mp-secondary__item-picture">
 											<img src="img/products/options/first.png" alt="">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-7 col-sm-5 col-md-4 col-xl-4">
 										<div class="mp-secondary__item-desc">
 											<span class="mp-secondary__item-heading">
 												Чернила Revcol
@@ -393,14 +731,17 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2 special-offset">
+									<div class="d-none d-sm-block col-sm-2 col-md-2 col-xl-2 special-offset">
 										<div class="mp-secondary__item-price special-offset">
 											<span>543 Р</span>
 										</div>
 									</div>
-									<div class="col-2 special-offset-second">
+									<div class="col-1 col-md-2 col-xl-2 special-offset-second d-flex">
 										<div class="mp-secondary__item-add">
-											<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<div class="mp-secondary__add-button basket-btn" onclick="this.classList.toggle('active')">
+												<span class="mp-secondary__add-button__svg"></span>
+											</div>
+											<!-- <img src="img/svg/light-add.svg" alt=""> -->
 										</div>
 									</div>
 								</div>
@@ -409,12 +750,12 @@
 							<!-- item -->
 							<div class="mp-secondary__item">
 								<div class="row no-gutters">
-									<div class="col-2">
+									<div class="col-3 col-sm-2 col-md-2 col-xl-2">
 										<div class="mp-secondary__item-picture">
 											<img src="img/products/options/first.png" alt="">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-7 col-sm-5 col-md-4 col-xl-4">
 										<div class="mp-secondary__item-desc">
 											<span class="mp-secondary__item-heading">
 												Чернила Revcol
@@ -424,14 +765,17 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2 special-offset">
+									<div class="d-none d-sm-block col-sm-2 col-md-2 col-xl-2 special-offset">
 										<div class="mp-secondary__item-price special-offset">
 											<span>543 Р</span>
 										</div>
 									</div>
-									<div class="col-2 special-offset-second">
+									<div class="col-1 col-md-2 col-xl-2 special-offset-second d-flex">
 										<div class="mp-secondary__item-add">
-											<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<div class="mp-secondary__add-button basket-btn" onclick="this.classList.toggle('active')">
+												<span class="mp-secondary__add-button__svg"></span>
+											</div>
+											<!-- <img src="img/svg/light-add.svg" alt=""> -->
 										</div>
 									</div>
 								</div>
@@ -440,7 +784,7 @@
 						</div>
 						
 						<div class="mp-secondary__button">
-							<a href="#">Смотреть все запчасти</a>
+							<a href="#" class="blue-btn">Смотреть все запчасти</a>
 						</div>
 					</div>
 				</div>
@@ -456,12 +800,12 @@
 							<!-- item -->
 							<div class="mp-secondary__item">
 								<div class="row no-gutters">
-									<div class="col-2">
+									<div class="col-3 col-sm-2 col-md-2 col-xl-2">
 										<div class="mp-secondary__item-picture">
 											<img src="img/products/options/first.png" alt="">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-7 col-sm-5 col-md-4 col-xl-4">
 										<div class="mp-secondary__item-desc">
 											<span class="mp-secondary__item-heading">
 												Чернила Revcol
@@ -471,14 +815,17 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2 special-offset">
+									<div class="d-none d-sm-block col-sm-2 col-md-2 col-xl-2 special-offset">
 										<div class="mp-secondary__item-price special-offset">
 											<span>543 Р</span>
 										</div>
 									</div>
-									<div class="col-2 special-offset-second">
+									<div class="col-1 col-md-2 col-xl-2 special-offset-second d-flex">
 										<div class="mp-secondary__item-add">
-											<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<div class="mp-secondary__add-button basket-btn" onclick="this.classList.toggle('active')">
+												<span class="mp-secondary__add-button__svg"></span>
+											</div>
+											<!-- <img src="img/svg/light-add.svg" alt=""> -->
 										</div>
 									</div>
 								</div>
@@ -487,12 +834,12 @@
 							<!-- item -->
 							<div class="mp-secondary__item">
 								<div class="row no-gutters">
-									<div class="col-2">
+									<div class="col-3 col-sm-2 col-md-2 col-xl-2">
 										<div class="mp-secondary__item-picture">
 											<img src="img/products/options/first.png" alt="">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-7 col-sm-5 col-md-4 col-xl-4">
 										<div class="mp-secondary__item-desc">
 											<span class="mp-secondary__item-heading">
 												Чернила Revcol
@@ -502,14 +849,17 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2 special-offset">
+									<div class="d-none d-sm-block col-sm-2 col-md-2 col-xl-2 special-offset">
 										<div class="mp-secondary__item-price special-offset">
 											<span>543 Р</span>
 										</div>
 									</div>
-									<div class="col-2 special-offset-second">
+									<div class="col-1 col-md-2 col-xl-2 special-offset-second d-flex">
 										<div class="mp-secondary__item-add">
-											<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<div class="mp-secondary__add-button basket-btn" onclick="this.classList.toggle('active')">
+												<span class="mp-secondary__add-button__svg"></span>
+											</div>
+											<!-- <img src="img/svg/light-add.svg" alt=""> -->
 										</div>
 									</div>
 								</div>
@@ -518,12 +868,12 @@
 							<!-- item -->
 							<div class="mp-secondary__item">
 								<div class="row no-gutters">
-									<div class="col-2">
+									<div class="col-3 col-sm-2 col-md-2 col-xl-2">
 										<div class="mp-secondary__item-picture">
 											<img src="img/products/options/first.png" alt="">
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-7 col-sm-5 col-md-4 col-xl-4">
 										<div class="mp-secondary__item-desc">
 											<span class="mp-secondary__item-heading">
 												Чернила Revcol
@@ -533,14 +883,17 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-2 special-offset">
+									<div class="d-none d-sm-block col-sm-2 col-md-2 col-xl-2 special-offset">
 										<div class="mp-secondary__item-price special-offset">
 											<span>543 Р</span>
 										</div>
 									</div>
-									<div class="col-2 special-offset-second">
+									<div class="col-1 col-md-2 col-xl-2 special-offset-second d-flex">
 										<div class="mp-secondary__item-add">
-											<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
+											<div class="mp-secondary__add-button basket-btn" onclick="this.classList.toggle('active')">
+												<span class="mp-secondary__add-button__svg"></span>
+											</div>
+											<!-- <img src="img/svg/light-add.svg" alt=""> -->
 										</div>
 									</div>
 								</div>
@@ -549,7 +902,7 @@
 						</div>
 
 						<div class="mp-secondary__button">
-							<a href="#">Смотреть все запчасти</a>
+							<a href="#" class="blue-btn">Смотреть все запчасти</a>
 						</div>
 
 					</div>
@@ -564,7 +917,7 @@
 	<div class="container">		
 		<div class="hamcore-journal__title d-flex flex-row align-items-center">
 			<span class="hamcore-journal__heading">Новости и статьи</span>
-			<div class="hamcore-journal__button ml-auto">
+			<div class="hamcore-journal__button ml-auto desktop">
 				<a href="#">Смотреть все</a>
 			</div>
 		</div>
@@ -572,7 +925,7 @@
 			<!-- article card START -->
 			<div class="hamcore-journal__article-card">
 				<div class="row">
-					<div class="col-4 d-flex">
+					<div class="col-12 col-md-7 col-lg-4 col-xl-4 d-flex">
 						<div class="hamcore-journal__first cole">
 							<div class="hamcore-journal__article-title">
 								<span class="hamcore-journal__article-heading">Компания CANON запускает програмное обеспечение Printseght</span>
@@ -589,17 +942,17 @@
 							</div> 
 						</div>
 					</div>
-					<div class="col-5 d-flex">
+					<div class="col-12 col-lg-5 col-xl-5 d-flex order-md-last">
 						<div class="cole">
 							<div class="hamcore-journal__article-preview-text">
 								<p>Canon Solutions America, Inc.  объявила о запуске нового программного обеспечения Océ PrintSight, разработанного компанией Canon Solutions America, чтобы предоставить компаниям, работающим с печатью, инструмент для мониторинга принтеров Océ Arizo <a href="#">Читать далее...</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-3 d-flex no-l-padding">
+					<div class="col-12 col-md-5 col-lg-3 col-xl-3 d-flex no-l-padding order-lg-last">
 						<div class="cole">
-							<div class="hamcore-journal__atricle-preview">
-								<img src="img/journal/first.png" alt="">
+							<div class="hamcore-journal__atricle-preview desktop">
+								<a href="#"><img src="img/journal/first.png" alt=""></a>
 							</div>
 						</div>
 					</div>
@@ -609,7 +962,7 @@
 			<!-- article card START -->
 			<div class="hamcore-journal__article-card">
 				<div class="row">
-					<div class="col-4 d-flex">
+					<div class="col-12 col-md-7 col-lg-4 col-xl-4 d-flex">
 						<div class="hamcore-journal__first cole">
 							<div class="hamcore-journal__article-title">
 								<span class="hamcore-journal__article-heading">Компания CANON запускает програмное обеспечение Printseght</span>
@@ -626,17 +979,17 @@
 							</div> 
 						</div>
 					</div>
-					<div class="col-5 d-flex">
+					<div class="col-12 col-lg-5 col-xl-5 d-flex order-md-last">
 						<div class="cole">
 							<div class="hamcore-journal__article-preview-text">
 								<p>Canon Solutions America, Inc.  объявила о запуске нового программного обеспечения Océ PrintSight, разработанного компанией Canon Solutions America, чтобы предоставить компаниям, работающим с печатью, инструмент для мониторинга принтеров Océ Arizo <a href="#">Читать далее...</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-3 d-flex no-l-padding">
+					<div class="col-12 col-md-5 col-lg-3 col-xl-3 d-flex no-l-padding order-lg-last">
 						<div class="cole">
-							<div class="hamcore-journal__atricle-preview">
-								<img src="img/journal/first.png" alt="">
+							<div class="hamcore-journal__atricle-preview desktop">
+								<a href="#"><img src="img/journal/first.png" alt=""></a>
 							</div>
 						</div>
 					</div>
@@ -646,7 +999,7 @@
 			<!-- article card START -->
 			<div class="hamcore-journal__article-card">
 				<div class="row">
-					<div class="col-4 d-flex">
+					<div class="col-12 col-md-7 col-lg-4 col-xl-4 d-flex">
 						<div class="hamcore-journal__first cole">
 							<div class="hamcore-journal__article-title">
 								<span class="hamcore-journal__article-heading">Компания CANON запускает програмное обеспечение Printseght</span>
@@ -663,24 +1016,30 @@
 							</div> 
 						</div>
 					</div>
-					<div class="col-5 d-flex">
+					<div class="col-12 col-lg-5 col-xl-5 d-flex order-md-last">
 						<div class="cole">
 							<div class="hamcore-journal__article-preview-text">
 								<p>Canon Solutions America, Inc.  объявила о запуске нового программного обеспечения Océ PrintSight, разработанного компанией Canon Solutions America, чтобы предоставить компаниям, работающим с печатью, инструмент для мониторинга принтеров Océ Arizo <a href="#">Читать далее...</a></p>
 							</div>
 						</div>
 					</div>
-					<div class="col-3 d-flex no-l-padding">
+					<div class="col-12 col-md-5 col-lg-3 col-xl-3 d-flex no-l-padding order-lg-last">
 						<div class="cole">
-							<div class="hamcore-journal__atricle-preview">
-								<img src="img/journal/first.png" alt="">
+							<div class="hamcore-journal__atricle-preview desktop">
+								<a href="#"><img src="img/journal/first.png" alt=""></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- article card END -->
+			<div class="col-12">
+				<div class="hamcore-journal__button mobile d-flex align-items-center">
+					<a href="#">Смотреть все</a>
+				</div>
+			</div>
 		</div>
+
 	</div>
 </section>
 <section id="second-infrastructure" class="second-infrastructure">

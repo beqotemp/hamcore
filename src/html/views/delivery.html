@@ -1,0 +1,62 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+
+<section id="delivery-page" class="delivery-page">
+	<div class="container">
+		<div class="delivery-page__intro">
+			<span class="delivery-page__title">
+				Доставка
+			</span>
+			<div class="delivery-page__subtitle">
+				<p>Доставка по всей россии и снг <br> без территориальной привязки</p>
+			</div>
+		</div>
+		<div class="delivery-page__type-of">
+			<div class="delivery-type">
+				<div class="row">
+					<div class="col-xl-8 offset-xl-2">
+						<div class="delivery-type__body d-flex flex-column flex-md-row">
+							<div class="delivery-type__picture">
+								<img src="img/items/delivery.png" alt="">
+							</div>
+							<div class="delivery-type__intro d-flex flex-column">
+								<div class="delivery-type__heading">
+									<span class="delivery-type__title">
+										Транспортной компанией 	
+									</span>
+								</div>
+								<div class="delivery-type__subtitle">
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-8 offset-xl-2">
+						<div class="delivery-type__summary">
+							<div class="about-product__specifications">
+								<div class="about-product__specifications-item d-flex flex-row">
+									<div class="about-product__specifications-name">По России</div>
+									<div class="about-product__specifications-type ml-auto">Бесплатно</div>
+								</div>
+								<div class="about-product__specifications-item d-flex flex-row">
+									<div class="about-product__specifications-name">Азия</div>
+									<div class="about-product__specifications-type ml-auto">2000$</div>
+								</div>
+								<div class="about-product__specifications-item d-flex flex-row">
+									<div class="about-product__specifications-name">Европа</div>
+									<div class="about-product__specifications-type ml-auto">1400$</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html'))() %>

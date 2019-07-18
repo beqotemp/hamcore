@@ -1,0 +1,278 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+
+<section id="search-page" class="search-page">
+	<div class="unsuccessful-search">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<div class="unsuccessful-search__heading">
+						<span class="unsuccessful-search__title">
+							По запросу ‘Radison’s flat’ ничего не найдено
+						</span>
+					</div>
+					<div class="unsuccessful-search__picture">
+						<img src="img/items/unsuccessful.png" alt="">
+					</div>
+					<div class="unsuccessful-search__subtitle">
+						<p>
+							Мы ничего не нашли по вышему запросу, попробуйте другой или найдите в разделе <a href="#">каталог товаров</a>
+						</p>
+					</div>
+					<div class="unsuccessful-search__button">
+						<a href="#">Вернуться</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="successful-search">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="successful-search__heading">
+						<span class="unsuccessful-search__title">
+							По запросу ‘Radison’s flat’ найдено
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="successful-search__result">
+			<div class="container">
+				<div class="row">
+
+					<!-- card -->
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+						<div class="product-card cole">
+							<div class="product-card__picture">
+								<img src="img/products/first.png" alt="">
+								<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+								</div>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title d-flex flex-row">
+									<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+									<span class="product-card__favorite ml-auto">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+									</span>
+								</div>
+								<div class="product-card__specifications">
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Цвета:</span>
+										<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+									</div>
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Гарантия:</span>
+										<span class="product-card__item-number ml-auto">3 года</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="d-flex flex-row align-items-center">
+									<span class="product-card__price">
+										130 000
+										<img src="img/svg/ruble.svg" alt="">
+									</span>
+									<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+										<div class="tooltip-cart">
+											<span class="tooltip-cart__add">Добавить в корзину</span>
+											<span class="tooltip-cart__added">Добавлено в корзину</span>
+											<span class="tooltip-cart__remove">Удалить из корзины</span>
+										</div>
+										<span class="product-card__add-button__svg" ></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- card END-->
+
+					<!-- card -->
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+						<div class="product-card cole">
+							<div class="product-card__picture">
+								<img src="img/products/first.png" alt="">
+								<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+								</div>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title d-flex flex-row">
+									<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+									<span class="product-card__favorite ml-auto">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+									</span>
+								</div>
+								<div class="product-card__specifications">
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Цвета:</span>
+										<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+									</div>
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Гарантия:</span>
+										<span class="product-card__item-number ml-auto">3 года</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="d-flex flex-row align-items-center">
+									<span class="product-card__price">
+										130 000
+										<img src="img/svg/ruble.svg" alt="">
+									</span>
+									<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+										<div class="tooltip-cart">
+											<span class="tooltip-cart__add">Добавить в корзину</span>
+											<span class="tooltip-cart__added">Добавлено в корзину</span>
+											<span class="tooltip-cart__remove">Удалить из корзины</span>
+										</div>
+										<span class="product-card__add-button__svg" ></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- card END-->
+					<!-- card -->
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+						<div class="product-card cole">
+							<div class="product-card__picture">
+								<img src="img/products/first.png" alt="">
+								<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+								</div>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title d-flex flex-row">
+									<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+									<span class="product-card__favorite ml-auto">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+									</span>
+								</div>
+								<div class="product-card__specifications">
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Цвета:</span>
+										<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+									</div>
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Гарантия:</span>
+										<span class="product-card__item-number ml-auto">3 года</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="d-flex flex-row align-items-center">
+									<span class="product-card__price">
+										130 000
+										<img src="img/svg/ruble.svg" alt="">
+									</span>
+									<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+										<div class="tooltip-cart">
+											<span class="tooltip-cart__add">Добавить в корзину</span>
+											<span class="tooltip-cart__added">Добавлено в корзину</span>
+											<span class="tooltip-cart__remove">Удалить из корзины</span>
+										</div>
+										<span class="product-card__add-button__svg" ></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- card END-->
+					<!-- card -->
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+						<div class="product-card cole">
+							<div class="product-card__picture">
+								<img src="img/products/first.png" alt="">
+								<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+								</div>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title d-flex flex-row">
+									<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+									<span class="product-card__favorite ml-auto">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+									</span>
+								</div>
+								<div class="product-card__specifications">
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Цвета:</span>
+										<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+									</div>
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Гарантия:</span>
+										<span class="product-card__item-number ml-auto">3 года</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="d-flex flex-row align-items-center">
+									<span class="product-card__price">
+										130 000
+										<img src="img/svg/ruble.svg" alt="">
+									</span>
+									<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+										<div class="tooltip-cart">
+											<span class="tooltip-cart__add">Добавить в корзину</span>
+											<span class="tooltip-cart__added">Добавлено в корзину</span>
+											<span class="tooltip-cart__remove">Удалить из корзины</span>
+										</div>
+										<span class="product-card__add-button__svg" ></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- card END-->
+					<!-- card -->
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 d-flex">
+						<div class="product-card cole">
+							<div class="product-card__picture">
+								<img src="img/products/first.png" alt="">
+								<div class="product-card__sub-picture" style="background-image: url(img/products/first-type.png);">
+								</div>
+							</div>
+							<div class="product-card__body">
+								<div class="product-card__title d-flex flex-row">
+									<span class="product-card__heading">Hamcoke Brookesia тексильный</span>
+									<span class="product-card__favorite ml-auto">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+									</span>
+								</div>
+								<div class="product-card__specifications">
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Цвета:</span>
+										<span class="product-card__item-number ml-auto">245 цветов rgb</span>
+									</div>
+									<div class="product-card__item d-flex flex-row">
+										<span class="product-card__item-name">Гарантия:</span>
+										<span class="product-card__item-number ml-auto">3 года</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-card__footer">
+								<div class="d-flex flex-row align-items-center">
+									<span class="product-card__price">
+										130 000
+										<img src="img/svg/ruble.svg" alt="">
+									</span>
+									<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+										<div class="tooltip-cart">
+											<span class="tooltip-cart__add">Добавить в корзину</span>
+											<span class="tooltip-cart__added">Добавлено в корзину</span>
+											<span class="tooltip-cart__remove">Удалить из корзины</span>
+										</div>
+										<span class="product-card__add-button__svg" ></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- card END-->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html'))() %>

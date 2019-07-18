@@ -6,7 +6,7 @@
 	<div class="container">
 		<div class="product-view__wrapper">
 			<div class="row">
-				<div class="col-1">
+				<div class="col-lg-1 col-xl-1">
 					<div class="product-view__slider-bar slider-bar">	
 						<div class="product-view__bar-item">
 							<img src="img/products/products/printer-first/first.png" alt="">
@@ -20,14 +20,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-5">
+				<div class="col-lg-5 col-xl-5">
 					<div class="product-view__slider">
 						<div class="product-view__slider-main slider-main">
 							<div class="product-view__slide">
 								<img src="img/products/products/printer-first/first.png" alt="">
 							</div>
 							<div class="product-view__slide">
-								<img src="img/products/products/printer-first/first.png" alt="">
+								<img src="img/products/products/printer-first/second.png" alt="">
 							</div>
 							<div class="product-view__slide">
 								<img src="img/products/products/printer-first/first.png" alt="">
@@ -35,7 +35,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-5">
+				<div class="col-lg-5 col-xl-5">
 					<div class="product-view__title">
 						<span class="product-view__heading">
 							Текстильный принтер HAMCORE Brokeesiass
@@ -76,18 +76,17 @@
 						</div>
 					</div>
 					<div class="product-view__price">
-						<span>130 000 R</span>
+						<span>130 000</span>
+						<img src="img/svg/ruble.svg" alt="">
 					</div>
 					<div class="product-view__buttons d-flex flex-row align-items-center">
 						<div class="product-view__button">
-							<button class="basket-add-btn">Добавить в корзину</button>
+							<button class="basket-add-btn basket-btn">Добавить в корзину</button>
 						</div>
-						<div class="product-view__favorite">
-							<label for="" class="d-flex flex-row align-items-center">
-								<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
-								<span>Отложить</span>
-							</label>
-						</div>	
+						<span class="product-view__favorite">
+							<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+							<span class="product-page-btn-name" onclick="this.classList.toggle('active')">Отложить</span>
+						</span>
 					</div>
 				</div>
 			</div>
@@ -96,29 +95,37 @@
 </section>
 <section id="use-example" class="use-example">
 	<div class="container">
-		<div class="row">
-			<div class="use-example__title">
-				<span class="use-example__heading">
-					Примеры использования 
-				</span>
-			</div>
+		<div class="use-example__title">
+			<span class="use-example__heading">
+				Примеры использования 
+			</span>
 		</div>
-		<div class="row">
-			<div class="use-example__gallery d-flex flex-row">
-				<div class="use-example__gallery-item">
-					<img src="img/products/products/printer-first/first.png" alt="">
+		<div class="use-example__gallery">
+			<div class="row d-flex flex-row">
+				<div class="col-xl-2">
+					<a href="img/products/products/printer-first/first.png" data-fancybox="gallery">
+						<img src="img/products/products/printer-first/first.png" alt="" />
+					</a>
 				</div>
-				<div class="use-example__gallery-item">
-					<img src="img/products/products/printer-first/first.png" alt="">
+				<div class="col-xl-2">
+					<div class="use-example__gallery-item">
+						<img src="img/products/products/printer-first/first.png" alt="">
+					</div>
 				</div>
-				<div class="use-example__gallery-item">
-					<img src="img/products/products/printer-first/first.png" alt="">
+				<div class="col-xl-2">
+					<div class="use-example__gallery-item">
+						<img src="img/products/products/printer-first/first.png" alt="">
+					</div>
 				</div>
-				<div class="use-example__gallery-item">
-					<img src="img/products/products/printer-first/first.png" alt="">
+				<div class="col-xl-2">
+					<div class="use-example__gallery-item">
+						<img src="img/products/products/printer-first/first.png" alt="">
+					</div>
 				</div>
-				<div class="use-example__gallery-item">
-					<img src="img/products/products/printer-first/first.png" alt="">
+				<div class="col-xl-2">
+					<div class="use-example__gallery-item">
+						<img src="img/products/products/printer-first/first.png" alt="">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -126,194 +133,207 @@
 </section>
 <section id="about-product" class="about-product">
 	<div class="container">
-		<div class="row">
-			<div class="about-product__wrapper">
-				<ul class="nav" id="myTab" role="tablist">
-				  <li class="nav-item">
-				    <a class="nav-link active about-product__link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Описание</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link about-product__link" id="profile-tab" data-toggle="tab" href="#product-specifications" role="tab" aria-controls="product-specifications" aria-selected="false">Технические характеристики</a>
-				  </li>
-				  <li class="nav-item">
-				    <a class="nav-link about-product__link" id="contact-tab" data-toggle="tab" href="#accessories" role="tab" aria-controls="accessories" aria-selected="false">Аксессуары</a>
-				  </li>
-				</ul>
-				<div class="tab-content about-product__tab-content" id="myTabContent">
-				  <div class="tab-pane fade show active about-product__tab" id="description" role="tabpanel" aria-labelledby="description-tab">
-				  	<div class="about-product__description">
-				  		<div class="row">
-				  			<div class="col-8">
-						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque perferendis unde harum sint quo aperiam dignissimos ipsum, voluptates obcaecati hic non quibusdam adipisci libero totam velit fugit tempore praesentium.</p>
-						  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nobis sunt quidem optio similique recusandae, impedit veniam odio atque cumque aspernatur nihil consequuntur, provident esse, quaerat perferendis dolore expedita dignissimos amet voluptatibus quos repellat nisi quas nostrum. Sit soluta, ea nostrum pariatur adipisci facere, non! Doloribus cum repellendus corporis, soluta eaque quam cupiditate, quos vero pariatur quia voluptatem, consectetur, architecto. Earum quae nihil quis, aut molestias libero nemo rerum autem natus deleniti consequuntur cum atque beatae iure eligendi harum dignissimos, voluptates, omnis minus praesentium, officiis possimus. Unde voluptate debitis delectus quasi quo, officia a repellendus tempora! Distinctio et voluptate, vero!</p>
-				  			</div>
-				  		</div>
-				  	</div>
-				  </div>
-				  <div class="tab-pane fade about-product__tab" id="product-specifications" role="tabpanel" aria-labelledby="product-specifications-tab">
-					<div class="about-product__specifications">
-						<div class="about-product__specifications-item d-flex flex-row">
-							<div class="about-product__specifications-name">Модель</div>
-							<div class="about-product__specifications-type ml-auto">Brookesia (Брукезии)</div>
-						</div>
-						<div class="about-product__specifications-item d-flex flex-row">
-							<div class="about-product__specifications-name">Цвет модели</div>
-							<div class="about-product__specifications-type ml-auto">Сапфирово-синий</div>
-						</div>
-						<div class="about-product__specifications-item d-flex flex-row">
-							<div class="about-product__specifications-name">Тип печати</div>
-							<div class="about-product__specifications-type ml-auto">Цветная</div>
-						</div>
-						<div class="about-product__specifications-item d-flex flex-row">
-							<div class="about-product__specifications-name">Печатающая головка</div>
-							<div class="about-product__specifications-type ml-auto">Epson F173090</div>
-						</div>
-						<div class="about-product__specifications-item d-flex flex-row">
-							<div class="about-product__specifications-name">Количество цветных каналов</div>
-							<div class="about-product__specifications-type ml-auto">6</div>
-						</div>
+		<div class="about-product__wrapper">
+			<ul class="nav" id="myTab" role="tablist">
+			  <li class="nav-item">
+			    <a class="nav-link active about-product__link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Описание</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link about-product__link" id="profile-tab" data-toggle="tab" href="#product-specifications" role="tab" aria-controls="product-specifications" aria-selected="false">Технические характеристики</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link about-product__link" id="contact-tab" data-toggle="tab" href="#accessories" role="tab" aria-controls="accessories" aria-selected="false">Аксессуары</a>
+			  </li>
+			</ul>
+			<div class="tab-content about-product__tab-content" id="myTabContent">
+			  <div class="tab-pane fade show active about-product__tab" id="description" role="tabpanel" aria-labelledby="description-tab">
+			  	<div class="about-product__description">
+			  		<div class="row">
+			  			<div class="col-lg-8 col-xl-8">
+					  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum doloremque perferendis unde harum sint quo aperiam dignissimos ipsum, voluptates obcaecati hic non quibusdam adipisci libero totam velit fugit tempore praesentium.</p>
+					  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam nobis sunt quidem optio similique recusandae, impedit veniam odio atque cumque aspernatur nihil consequuntur, provident esse, quaerat perferendis dolore expedita dignissimos amet voluptatibus quos repellat nisi quas nostrum. Sit soluta, ea nostrum pariatur adipisci facere, non! Doloribus cum repellendus corporis, soluta eaque quam cupiditate, quos vero pariatur quia voluptatem, consectetur, architecto. Earum quae nihil quis, aut molestias libero nemo rerum autem natus deleniti consequuntur cum atque beatae iure eligendi harum dignissimos, voluptates, omnis minus praesentium, officiis possimus. Unde voluptate debitis delectus quasi quo, officia a repellendus tempora! Distinctio et voluptate, vero!</p>
+			  			</div>
+			  		</div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade about-product__tab" id="product-specifications" role="tabpanel" aria-labelledby="product-specifications-tab">
+				<div class="about-product__specifications">
+					<div class="about-product__specifications-item d-flex flex-row">
+						<div class="about-product__specifications-name">Модель</div>
+						<div class="about-product__specifications-type ml-auto">Brookesia (Брукезии)</div>
 					</div>
-				  </div>
-				  <div class="tab-pane fade about-product__tab" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
-				  	<div class="about-product__accessories">
-				  		<!-- Item start -->
-				  		<div class="about-product__accessories-item">
-				  			<div class="row">
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-picture">
-				  						<img src="img/products/accessories/first.png" alt="">
-				  					</div>
-				  				</div>
-				  				<div class="col-3 d-flex align-items-center">
-				  					<div class="about-product__accessories-desc d-flex flex-column">
-				  						<span class="about-product__accessories-heading">Hamcoke Brookesia</span>
-				  						<span class="about-product__accessories-intro">Принтер, Текстильный</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-2 d-flex align-items-center">
-				  					<div class="about-product__accessories-price">
-				  						<span>130 000 Р</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center no-l-padding">
-				  					<div class="about-product__accessories-counter d-flex flex-row">
-				  						<span>
-				  							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="minus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-minus fa-w-12"><path fill="currentColor" d="M376 232H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h368c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  						</span>
-				  						<span>
-				  							1
-				  						</span>
-				  						<span>
-				  							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  						</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-favorite">
-				  						<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-add">
-				  						<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  					</div>
-				  				</div>
-				  			</div>
-				  		</div>
-				  		<!-- Item start END-->
-				  		<!-- Item start -->
-				  		<div class="about-product__accessories-item">
-				  			<div class="row">
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-picture">
-				  						<img src="img/products/accessories/first.png" alt="">
-				  					</div>
-				  				</div>
-				  				<div class="col-3 d-flex align-items-center">
-				  					<div class="about-product__accessories-desc d-flex flex-column">
-				  						<span class="about-product__accessories-heading">Hamcoke Brookesia</span>
-				  						<span class="about-product__accessories-intro">Принтер, Текстильный</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-2 d-flex align-items-center">
-				  					<div class="about-product__accessories-price">
-				  						<span>130 000 Р</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center no-l-padding">
-				  					<div class="about-product__accessories-counter d-flex flex-row">
-				  						<span>
-				  							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="minus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-minus fa-w-12"><path fill="currentColor" d="M376 232H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h368c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  						</span>
-				  						<span>
-				  							1
-				  						</span>
-				  						<span>
-				  							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  						</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-favorite">
-				  						<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-add">
-				  						<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  					</div>
-				  				</div>
-				  			</div>
-				  		</div>
-				  		<!-- Item start END-->
-				  		<!-- Item start -->
-				  		<div class="about-product__accessories-item">
-				  			<div class="row">
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-picture">
-				  						<img src="img/products/accessories/first.png" alt="">
-				  					</div>
-				  				</div>
-				  				<div class="col-3 d-flex align-items-center">
-				  					<div class="about-product__accessories-desc d-flex flex-column">
-				  						<span class="about-product__accessories-heading">Hamcoke Brookesia</span>
-				  						<span class="about-product__accessories-intro">Принтер, Текстильный</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-2 d-flex align-items-center">
-				  					<div class="about-product__accessories-price">
-				  						<span>130 000 Р</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center no-l-padding">
-				  					<div class="about-product__accessories-counter d-flex flex-row">
-				  						<span>
-				  							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="minus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-minus fa-w-12"><path fill="currentColor" d="M376 232H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h368c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  						</span>
-				  						<span>
-				  							1
-				  						</span>
-				  						<span>
-				  							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  						</span>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-favorite">
-				  						<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
-				  					</div>
-				  				</div>
-				  				<div class="col-1 d-flex align-items-center">
-				  					<div class="about-product__accessories-add">
-				  						<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-plus fa-w-12"><path fill="currentColor" d="M376 232H216V72c0-4.42-3.58-8-8-8h-32c-4.42 0-8 3.58-8 8v160H8c-4.42 0-8 3.58-8 8v32c0 4.42 3.58 8 8 8h160v160c0 4.42 3.58 8 8 8h32c4.42 0 8-3.58 8-8V280h160c4.42 0 8-3.58 8-8v-32c0-4.42-3.58-8-8-8z" class=""></path></svg>
-				  					</div>
-				  				</div>
-				  			</div>
-				  		</div>
-				  		<!-- Item start END-->
-				  	</div>
-				  </div>
+					<div class="about-product__specifications-item d-flex flex-row">
+						<div class="about-product__specifications-name">Цвет модели</div>
+						<div class="about-product__specifications-type ml-auto">Сапфирово-синий</div>
+					</div>
+					<div class="about-product__specifications-item d-flex flex-row">
+						<div class="about-product__specifications-name">Тип печати</div>
+						<div class="about-product__specifications-type ml-auto">Цветная</div>
+					</div>
+					<div class="about-product__specifications-item d-flex flex-row">
+						<div class="about-product__specifications-name">Печатающая головка</div>
+						<div class="about-product__specifications-type ml-auto">Epson F173090</div>
+					</div>
+					<div class="about-product__specifications-item d-flex flex-row">
+						<div class="about-product__specifications-name">Количество цветных каналов</div>
+						<div class="about-product__specifications-type ml-auto">6</div>
+					</div>
 				</div>
+			  </div>
+			  <div class="tab-pane fade about-product__tab" id="accessories" role="tabpanel" aria-labelledby="accessories-tab">
+			  	<div class="about-product__accessories">
+			  		<!-- Item start -->
+			  		<div class="about-product__accessories-item">
+			  			<div class="row">
+			  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+			  					<div class="about-product__accessories-picture">
+			  						<img src="img/products/accessories/first.png" alt="">
+			  					</div>
+			  				</div>
+			  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+			  					<div class="about-product__accessories-desc d-flex flex-column">
+			  						<span class="about-product__accessories-heading">Hamcoke Brookesia</span>
+			  						<span class="about-product__accessories-intro">Принтер, Текстильный</span>
+			  					</div>
+			  				</div>
+			  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+			  					<div class="about-product__accessories-price">
+			  						<span>130 000 Р</span>
+			  					</div>
+			  				</div>
+			  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+			  					<div class="about-product__accessories-counter d-flex flex-row">
+			  						<div class="about-product__box">
+										<span class="about-product__minus"></span>
+			  						</div>
+									<span>
+									1
+									</span>
+									<div class="about-product__box">
+										<span class="about-product__plus"></span>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<div class="col-4 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+			  					<div class="about-product__accessories-favorite">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+			  					</div>
+			  				</div>
+			  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<!-- Item start END-->
+			  		<!-- Item start -->
+			  		<div class="about-product__accessories-item">
+			  			<div class="row">
+			  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+			  					<div class="about-product__accessories-picture">
+			  						<img src="img/products/accessories/first.png" alt="">
+			  					</div>
+			  				</div>
+			  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+			  					<div class="about-product__accessories-desc d-flex flex-column">
+			  						<span class="about-product__accessories-heading">Hamcoke Brookesia</span>
+			  						<span class="about-product__accessories-intro">Принтер, Текстильный</span>
+			  					</div>
+			  				</div>
+			  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+			  					<div class="about-product__accessories-price">
+			  						<span>130 000 Р</span>
+			  					</div>
+			  				</div>
+			  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+			  					<div class="about-product__accessories-counter d-flex flex-row">
+			  						<div class="about-product__box">
+										<span class="about-product__minus"></span>
+			  						</div>
+									<span>
+									1
+									</span>
+									<div class="about-product__box">
+										<span class="about-product__plus"></span>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<div class="col-4 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+			  					<div class="about-product__accessories-favorite">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+			  					</div>
+			  				</div>
+			  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<!-- Item start END-->
+			  		<!-- Item start -->
+			  		<div class="about-product__accessories-item">
+			  			<div class="row">
+			  				<div class="col-3 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+			  					<div class="about-product__accessories-picture">
+			  						<img src="img/products/accessories/first.png" alt="">
+			  					</div>
+			  				</div>
+			  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+			  					<div class="about-product__accessories-desc d-flex flex-column">
+			  						<span class="about-product__accessories-heading">Hamcoke Brookesia</span>
+			  						<span class="about-product__accessories-intro">Принтер, Текстильный</span>
+			  					</div>
+			  				</div>
+			  				<div class="col-4 col-md-2 col-lg-2 col-xl-2 d-flex align-items-center">
+			  					<div class="about-product__accessories-price">
+			  						<span>130 000 Р</span>
+			  					</div>
+			  				</div>
+			  				<div class="col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center no-l-padding">
+			  					<div class="about-product__accessories-counter d-flex flex-row">
+			  						<div class="about-product__box">
+										<span class="about-product__minus"></span>
+			  						</div>
+									<span>
+									1
+									</span>
+									<div class="about-product__box">
+										<span class="about-product__plus"></span>
+			  						</div>
+			  					</div>
+			  				</div>
+			  				<div class="col-4 col-md-2 col-lg-1 col-xl-1 d-flex align-items-center">
+			  					<div class="about-product__accessories-favorite">
+										<span class="havet-account__btn-svg" onclick="this.classList.toggle('active')"></span>
+			  					</div>
+			  				</div>
+			  				<div class="col-1 col-1 col-md-1 col-lg-1 col-xl-1 d-flex align-items-center">
+								<div class="product-card__add-button basket-btn status ml-auto" onclick="this.classList.toggle('active')">
+									<div class="tooltip-cart">
+										<span class="tooltip-cart__add">Добавить в корзину</span>
+										<span class="tooltip-cart__added">Добавлено в корзину</span>
+										<span class="tooltip-cart__remove">Удалить из корзины</span>
+									</div>
+									<span class="product-card__add-button__svg" ></span>
+								</div>
+			  				</div>
+			  			</div>
+			  		</div>
+			  		<!-- Item start END-->
+			  	</div>
+			  </div>
 			</div>
 		</div>
 	</div>

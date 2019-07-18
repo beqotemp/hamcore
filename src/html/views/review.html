@@ -1,0 +1,126 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<%= _.template(require('./../includes/breadcrumbs.html'))() %>
+
+<section id="review-page" class="review-page">
+	<div class="container">
+		<div class="review-page__intro">
+			<span class="review-page__title">
+				Отзывы
+			</span>
+			<div class="review-page__subtitle">
+				<p>
+					Здесь вы можете оставить отзыв <br>
+					о работе нашего интернет магазина
+				</p>
+			</div>
+		</div>
+		<div class="review-page__wrapper">
+			<!-- review card  -->
+			<div class="review">
+				<div class="row">
+					<div class="col-xl-1 offset-xl-1">
+						<div class="review__person">
+							<img src="img/items/person.png" alt="">
+						</div>
+					</div>
+					<div class="col-xl-8">
+						<div class="review__body">
+							<div class="review__heading">
+								<span class="review__title">
+									Михаил
+								</span>
+							</div>
+							<div class="review__intro">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- review card  -->
+			<div class="review">
+				<div class="row">
+					<div class="col-xl-1 offset-xl-1">
+						<div class="review__person">
+							<img src="img/items/person.png" alt="">
+						</div>
+					</div>
+					<div class="col-xl-8">
+						<div class="review__body">
+							<div class="review__heading">
+								<span class="review__title">
+									Михаил
+								</span>
+							</div>
+							<div class="review__intro">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="make-review" style="display:none">
+			<div class="row">
+				<div class="col-xl-8 offset-xl-2">
+					<div class="make-review__title">
+						Оставить отзыв
+					</div>
+					<div class="make-review__form">
+						<form action="">
+							<div class="row">
+								<div class="col-xl-6">
+									<div class="sign-in__form-item d-flex flex-column">
+										<label for="signInEmail">Имя</label>
+										<input type="email" class="make-review__input" id="signInEmail" aria-describedby="emailHelp" placeholder="info@hamkore.ru">
+									</div>
+								</div>
+								
+								<div class="col-xl-6">
+									<div class="sign-in__form-item d-flex flex-column">
+										<label for="signInEmail">E-mail</label>
+										<input type="email" class="make-review__input" id="signInEmail" aria-describedby="emailHelp" placeholder="info@hamkore.ru">
+									</div>
+								</div>
+								<div class="col-xl-12">
+									<div class="sign-in__form-item d-flex flex-column">
+										<label for="signInTextArea">Сообщение</label>
+										<textarea rows="6" cols="50" class="make-review__input" id="signInTextArea" aria-describedby="emailHelp" placeholder="Напишите сообщение"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="make-review__button">
+								<a class="sign-up__enter" href="#">
+									<span>Отправить отзыв</span>
+									<img src="img/svg/btn-arrow.svg" alt="">
+								</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="maked-review">
+			<div class="maked-review__heading">
+				<span class="maked-review__title">
+					Спасибо
+				</span>
+				<div class="maked-review__picture">
+					<img src="img/items/balloons.png" alt="">
+				</div>
+				<div class="review-page__subtitle">
+					<p>
+						Ваш отзыв отправлен, после обработки администратором,<br> будет произведена публикация вашего отзыва
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<%= _.template(require('./../includes/footer.html'))() %>
