@@ -3,7 +3,7 @@
 
 <section id="regpay-page" class="regpay-page">
 	<div class="container">
-		<div class="basket-page__menu">
+		<div class="reg-info__menu">
 			<div class="row">
 				<div class="col-xl-12">
 					<ul class="nav" id="myTab" role="tablist">
@@ -21,7 +21,7 @@
 			</div>
 		</div>
 		<div class="basket-page__body">
-			<div class="tab-content my-basket__tab-content" id="myTabContent">
+			<div class="tab-content reg-info__tab-content" id="myTabContent">
 				<!-- tab -->
 				<div class="tab-pane fade show active my-basket__tab" id="reg-info" role="tabpanel" aria-labelledby="my-basket-tab">
 					<div class="reg-info">
@@ -29,43 +29,122 @@
 							<div class="col-xl-5">
 								<div class="reg-info__registration">
 									<div class="reg-info__heading">
-										<span class="reg-info__title">
+										<span class="reg-info__main-title">
 											Оформление заказа
 										</span>
 									</div>
 									<div class="reg-info__form">
 										<form action="">
-											<div class="sign-up__form-item d-flex flex-column">
+											<div class="reg-info__form-item d-flex flex-column">
 												<label for="signUpName">ФИО <span class="small-desk">(как в паспорте)</span></label>
 				    							<input type="text" class="sign-up__input" id="regInfoName" placeholder="Александр">
 											</div>
-											<div class="sign-up__form-item d-flex flex-column">
+											<div class="reg-info__form-item d-flex flex-column">
 												<label for="signUpName">Телефон</label>
 				    							<input type="text" class="sign-up__input" id="regInfoPhone" placeholder="+7 (967) 644-28-89">
 											</div>
-											<div class="sign-up__form-item d-flex flex-column">
+											<div class="reg-info__form-item d-flex flex-column">
 												<label for="signUpEmail">E-mail</label>
 				    							<input type="email" class="sign-up__input" id="regInfoEmail" aria-describedby="emailHelp" placeholder="info@hamkore.ru">
 											</div>
-											<div class="sign-up__form-item d-flex flex-column">
+											<div class="reg-info__form-item d-flex flex-column">
 												<label for="signUpName">Город</label>
 				    							<input type="text" class="sign-up__input" id="regInfoCity" placeholder="Москва">
 											</div>
-											<div class="sign-up__form-item d-flex flex-column">
+											<div class="reg-info__form-item d-flex flex-column">
 												<label for="signUpName">Адрес доставки</label>
-				    							<input type="text" class="sign-up__input" id="regInfoAddress" placeholder="Москва">
+				    							<input type="text" class="sign-up__input" id="regInfoAddress" placeholder="проспект Академика Сахарова">
 											</div>
-											<div class="sign-up__form-item d-flex flex-row">
+											<div class="reg-info__form-special-item d-flex flex-row">
 												<input type="checkbox" aria-label="Checkbox for following text input">
-												<label for="signUpName">Адрес доставки</label>
-				    							<!-- <input type="text" class="sign-up__input" id="regInfoAddress" placeholder="Москва"> -->
+												<label for="signUpName">Перезвонить мне и рассказать подробности</label>
+											</div>
+											<div class="reg-info__form-item">
+												<div class="sign-up__buttons d-flex flex-row align-items-center">
+													<a class="sign-up__enter" href="#">
+														<span>Продолжить</span>
+														<img src="img/svg/btn-arrow.svg" alt="">
+													</a>
+												</div>
 											</div>
 										</form>
 									</div>
 								</div>
 							</div>
 							<div class="col-xl-6 offset-xl-1">
-								
+								<div class="reg-info__added">
+									<div class="reg-info__heading">
+										<span class="reg-info__second-title">
+											Товары в заказе
+										</span>
+									</div>
+								</div>
+								<div class="reg-info__body">
+									<!-- reg info item -->
+									<div class="reg-info__item">
+										<div class="row">
+											<div class="col-xl-2 d-flex align-items-center">
+												<div class="reg-info__picture">
+													<img src="img/products/first.png" alt="">
+												</div>
+											</div>
+											<div class="col-7 col-md-4 col-lg-3 col-xl-4 d-flex align-items-center">
+							  					<div class="reg-info__heading d-flex flex-column">
+							  						<span class="reg-info__title">Hamcoke Brookesia</span>
+							  						<span class="reg-info__subtitle">Принтер, Текстильный</span>
+							  					</div>
+							  				</div>
+							  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+							  					<div class="reg-info__item-info d-flex flex-column">
+							  						<span class="reg-info__price-title">Цена</span>
+							  						<span class="reg-info__price">
+							  							130 000
+							  							<img class="svg-ruble" src="img/svg/ruble.svg" alt="">
+							  						</span>
+							  					</div>
+							  				</div>
+							  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+							  					<div class="reg-info__counter d-flex flex-column">
+							  						<span class="reg-info__subtitle">Шт</span>
+							  						<span class="reg-info__count">1</span>
+							  					</div>
+							  				</div>
+										</div> 
+									</div>
+									<!-- reg info item END --> 
+									<!-- reg info item -->
+									<div class="reg-info__item">
+										<div class="row">
+											<div class="col-xl-2 d-flex align-items-center">
+												<div class="reg-info__picture">
+													<img src="img/products/first.png" alt="">
+												</div>
+											</div>
+											<div class="col-7 col-md-4 col-lg-3 col-xl-4 d-flex align-items-center">
+							  					<div class="reg-info__heading d-flex flex-column">
+							  						<span class="reg-info__title">Hamcoke Brookesia</span>
+							  						<span class="reg-info__subtitle">Принтер, Текстильный</span>
+							  					</div>
+							  				</div>
+							  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+							  					<div class="reg-info__item-info d-flex flex-column">
+							  						<span class="reg-info__subtitle">Цена</span>
+							  						<span class="reg-info__price">
+							  							130 000
+							  							<img class="svg-ruble" src="img/svg/ruble.svg" alt="">
+							  						</span>
+							  					</div>
+							  				</div>
+							  				<div class="col-7 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center">
+							  					<div class="reg-info__counter d-flex flex-column">
+							  						<span class="reg-info__subtitle">Шт</span>
+							  						<span class="reg-info__count">1</span>
+							  					</div>
+							  				</div>
+										</div> 
+									</div>
+									<!-- reg info item END --> 
+								</div>
 							</div>
 						</div>
 					</div>
@@ -73,15 +152,31 @@
 				<!-- tab -->
 				<div class="tab-pane fade show my-basket__tab" id="paying-order" role="tabpanel" aria-labelledby="basket-favorite-tab">
 					<div class="basket-favorite">
-						2
+						¯\_(ツ)_/¯
 					</div>
 				</div>
 				<!-- tab -->	
 				<div class="tab-pane fade show my-basket__tab" id="congratulations" role="tabpanel" aria-labelledby="basket-favorite-tab">
 					<div class="basket-orders">
-						3
+						<div class="grac-basket">
+							<div class="reg-info__grac">
+								Ваш заказ успешно совершен
+							</div>
+							<div class="reg-info__pic">
+								<img src="img/items/2.png" alt="">
+							</div>
+							<div class="empty-basket__subtitle">
+								<p>
+									В данный момент мы обрабатываем ваш заказ, когда мы его <br> отправим на странице <a href="#">мои заказы</a> появится трек номер <br> отслеживания по которому вы сможете проследить за посылкой
+									
+								</p>
+							</div>
+							<div class="basket-btn">
+								<a href="#">Мои заказы</a>
+							</div>
+
+						</div>
 					</div>
-					
 				</div>
 			</div>
 		</div>

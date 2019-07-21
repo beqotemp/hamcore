@@ -9,6 +9,7 @@ import "./scripts/menu.js";
 import "./scripts/svg-color.js";
 import "./scripts/tooltips.js";
 import "./scripts/tooltip-second.js";
+import "./scripts/header-slider.js";
 /*
 import "./scripts/sliders.js";
 import "./scripts/screen.js";

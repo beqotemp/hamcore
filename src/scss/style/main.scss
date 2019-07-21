@@ -1,5 +1,5 @@
 body {
-	/* background-image: url(../img/intermediately/orders-basket.png); */
+	/* background-image: url(../img/intermediately/payreg.png); */
     background-position-x: 204px;
     background-repeat: no-repeat;
     background-position-y: top;
@@ -12,6 +12,9 @@ body {
 }
 *:focus {
     outline: none;
+}
+a {
+	user-select: none!important;
 }
 a:focus,
 button:focus,
@@ -38,12 +41,25 @@ textarea:focus {
 }
 .Site-content {
   flex: 1;
+
 }
 .cole {
   flex: 1;
 }
 
 /* General Elements */
+.svg-ruble {
+	display: inline-block;
+	width: 16px;
+	vertical-align: middle;
+	height: 21px;
+	-webkit-mask: url(../img/svg/ruble.svg) no-repeat center;
+		    mask: url(../img/svg/ruble.svg) no-repeat center;
+	transition: .4s ease;
+	user-select: none;
+
+}
+
 .hide-window {
 	bottom: -75px!important
 }
@@ -216,7 +232,7 @@ textarea:focus {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 200%;
+    top: 100%;
     height: 100%;
     z-index: -1;
     transition: .4s ease-out;
@@ -225,6 +241,7 @@ textarea:focus {
     &.active {
     	opacity: 1;
 		top: 100%;
+		z-index: 22;
 		height: 85vh;
     }
 	&__item {}
@@ -389,14 +406,22 @@ textarea:focus {
 	}
 
 }
+
+#menu-btn:hover .desctop-navigation__catalog-burger-title {
+	color:#f1f1f1;
+}
 .desctop-navigation {
-	z-index: 2;
+	
 	position: relative;
+
 	&__basket-lvl {
 	    padding: 15px 0px;
+
 	}
 	&__first-lvl {
 		padding-top: 14px;
+		user-select: none;
+		
 	}
 	&__logo {
 		height: 40px;
@@ -429,6 +454,12 @@ textarea:focus {
 					color: #8c8c8c;
 					font-family: $PNL;
 					font-size: 15px;
+					transition: .4s;
+					&:hover {
+						color:#565656;
+						text-decoration: underline;
+
+					}
 				}
 			}
 		}
@@ -437,9 +468,16 @@ textarea:focus {
 		padding: 10px 0px;
 		word-break: unset;
 		& span {
-			font-family: $PNR;
-			color: #8c8c8c;
-			font-size: 15px;
+			& a {
+				font-family: $PNR;
+				color: #8c8c8c;
+				font-size: 15px;
+				transition: .4s;
+				&:hover {
+					color:#565656;
+					text-decoration: underline;
+				}
+			}
 		}
 	}
 	&__sign-in-up {
@@ -448,11 +486,17 @@ textarea:focus {
 			font-family: $PNR;
 			font-size: 15px;
 			color: #8c8c8c;
+			transition: .4s;
+			&:hover {
+				color:#565656;
+				text-decoration: underline;
+			}
 		}
 		& span {
 			font-family: $PNR;
 			font-size: 15px;
 			color: #8c8c8c;
+			user-select: none;
 		}
 	}
 	&__second-lvl {
@@ -460,7 +504,8 @@ textarea:focus {
 	    margin-top: 5px;
 	    padding: 1px 0;
 	    position: relative;
-	    z-index: 2;
+	    
+
 	}
 	&__catalog-triggers {
 
@@ -470,9 +515,10 @@ textarea:focus {
 		margin-left: 7px;
 		font-family: $PNL;
 		color: #fff;
+		cursor: pointer;
+		user-select: none;
 	}
-
-	&__category-nav {
+		&__category-nav {
 		& ul {
 			padding: 17px 0 17px 4px;
 
@@ -486,6 +532,10 @@ textarea:focus {
 					color: #fff;
 					font-size: 16px;
 					text-decoration: none;
+					transition: .4s;
+					&:hover {
+						color:#dcebff;
+					}
 				}
 			}
 		}
@@ -515,6 +565,12 @@ textarea:focus {
 					opacity: 0;
 				}	
 			}
+			&:hover .desctop-navigation__search::placeholder {
+				color: black;
+			}
+			&:hover svg {
+				color: black;
+			}
 		}
 		& svg {
 			position: absolute;
@@ -522,13 +578,14 @@ textarea:focus {
 		    top: 15px;
 		    left: 16px;
 		    color: #8d8c8c;
-		    transition: .4s;
+		    transition: .6s;
 		    cursor: pointer;
 		}
 	}
 	&__search {
 		border: none; 
 		width: 100%;
+		transition: .6s;
 		&::placeholder {
 			font-family: $PNL;
 			color: #8d8c8c;
@@ -541,6 +598,11 @@ textarea:focus {
 		& svg {
 		    height: 22px;
     		color: #fff;
+    		cursor: pointer;
+    		transition: .4s;
+    		&:hover{
+    			color:#ddebff;
+    		}
 		}
 	}
 	&__favorite-count {
@@ -571,6 +633,12 @@ textarea:focus {
 		border:none;
 		border-radius: 6px;
 		box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.03);
+		transition: .4s;
+		&:hover {
+			background-color:#eff6ff;
+			color: #3f3d3e;
+			text-decoration: none;
+		}
 	}
 	&__basket-btn-background {
 		position: absolute;
@@ -633,6 +701,85 @@ textarea:focus {
 /* Main Page */
 /* MainPage First section */
 
+.header-slider {
+	&__wrapper {
+		position: relative;
+	}
+	&__controls {
+		position: absolute;
+		right: 0;
+		bottom: 30px;
+		left: auto;
+		z-index: 15;
+		display: flex;
+		justify-content: center;
+		padding-left: 0;
+		margin-right: 15%;
+		margin-left: 15%;
+		list-style: none;	
+	}
+	
+	&__controller {
+		position: relative;
+		cursor: pointer;
+		color: transparent;
+		line-height: 8px;
+		border-bottom: 2px solid #fff;
+	    transition: opacity .6s ease;
+	   	font-size: 17px;
+		font-family: $PNSB;
+		&:before {
+			content:'0';
+		}
+		&:hover {
+			border-bottom: 2px solid #c2c0c0;
+		}
+		&.active {
+			color: #fff;
+			border:none;
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+	}
+	&__item {
+		background-size: cover;
+		height: 500px;
+	}
+	&__heading {
+		user-select: none;
+	    z-index: 10;
+	    color: #fff;
+	}
+	&__title {
+		text-transform: uppercase;
+		font-family: $PNR;
+		color: #fff;
+		font-size: 41px;
+		line-height: 57px;
+		& span {
+			color: #f2f2f2;
+			display: block;
+			white-space: nowrap;
+		}
+	}
+	&__subtitle {
+		user-select: none;
+		margin-top: 6px;
+		font-family: $PNL;
+		font-size: 16px;
+		line-height: 25px;
+		color: #fff;	
+	}
+	&__button {
+		margin-top: 20px;
+		& a {
+			color: #fff;
+			font-size: 16px;
+			font-family: $PNR;
+		}
+
+	}
+}
 /* MainPage Second section */
 .about-infrastructure {
 	&_cards {
@@ -641,6 +788,7 @@ textarea:focus {
 }
 .infrastructure-card {
 	position: relative;
+	user-select: none;
 	&__title {
 	}
 	&__heading {
@@ -661,11 +809,20 @@ textarea:focus {
 	&__price {
 		position: absolute;
 		bottom: 0;
-		left:0;
+		left:0; 
+		user-select: none;
 		& span {
 			font-size: 16px;
 			font-family: $PNL;
 			color: #9c9b9b;
+			& .svg-ruble {
+			height: 14px;
+    		margin-bottom: 3px;
+		    background-color: #9c9b9b;
+		    -webkit-mask: url(../img/svg/ruble.svg) no-repeat center;
+		    mask: url(../img/svg/ruble.svg) no-repeat center;
+		    transition: .4s ease;
+			}
 		}
 	}
 }
@@ -680,6 +837,7 @@ textarea:focus {
 	font-family:$PNR;
 	color: #3e3b3c;
 	font-size: 40px;
+	user-select: none;
 }
 
 .product-card {
@@ -689,6 +847,7 @@ textarea:focus {
 		border-radius: 14px;
 		position: relative;
 		overflow: hidden;
+		cursor:pointer;
 		& img {
 			width: 100%;
     		height: auto;
@@ -748,11 +907,13 @@ textarea:focus {
 	}
 	&__item {
 		margin-top: 2px;
+		user-select: none;
 	}
 	&__item-name {
 		font-family: $PNL;
 		font-size: 14px;
 		color: #8c8c8c;
+		user-select: none;
 	}
 	&__item-number {
 		font-family: $PNL;
@@ -768,12 +929,14 @@ textarea:focus {
 		font-family: $PNSB;
 		font-size: 20px;
 		color: #3e3b3c;
+		user-select: none;
 		& i {
 			color: #3e3b3c;
 		}
 		& img {
 			color: #3e3b3c;
-			height: 16px;	
+			height: 16px;
+			margin-bottom: 4px;
 		}
 	}
 	&__add-button {
@@ -868,6 +1031,7 @@ textarea:focus {
 		font-family:$PNR;
 		color: #3e3b3c;
 		font-size: 40px;
+		user-select: none;
 	}
 	&__button {
 		& a {
@@ -888,6 +1052,7 @@ textarea:focus {
 	}
 	&__cards {
 		margin-top: 3.8vh;
+
 	}
 }
 
@@ -902,6 +1067,7 @@ textarea:focus {
 		font-family:$PNR;
 		color: #3e3b3c;
 		font-size: 40px;
+		user-select: none;
 	}
 	&__button {
 		& a {
@@ -959,15 +1125,28 @@ textarea:focus {
 	&__button {
 		margin-top: 40px;
 	}
+	&__item-desc {
+		& a {
+			text-decoration:none;
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	}
 	&__item-heading {
 		font-family: $PNSB;
 		font-size: 20px;
 		color: #3e3b3c;
+		&:hover {
+			text-decoration: underline;	
+			color: #3e3b3c;	
+		}
 	}
 	&__item-subtitle {
 		font-family: $PNL;
 		color: #8c8c8c;
 		font-size: 14px;
+		user-select: none;
 	}
 	&__item-price {
 		span {
@@ -1046,6 +1225,7 @@ textarea:focus {
 	}
 	&__heading {
 		font-family:$PNR;
+		user-select: none;
 		color: #3e3b3c;
 		font-size: 40px;
 	}
@@ -1087,6 +1267,7 @@ textarea:focus {
 	}
 	&__article-tags {
 		margin-top: 4px;
+		user-select: none;
 		& ul {
 			display: inline;
 			& li {
@@ -1100,6 +1281,7 @@ textarea:focus {
 	}
 	&__article-publish-date {
 		position: absolute;
+		user-select: none;
 		bottom: 0;
 		& span {
 			font-family: $PNL;
@@ -1134,6 +1316,7 @@ textarea:focus {
 /* MainPage Eighth section */
 .second-infrastructure {
 	margin-bottom: 7.7vh;
+	user-select: none;
 	&__title {
 		margin-top: 9vh;
 	}
@@ -1158,7 +1341,7 @@ textarea:focus {
 			font-family: $PNL;
 			color: #939293;
 			line-height: 25px;
-			
+			user-select: none;
 		}
 	}
 }
@@ -1181,13 +1364,13 @@ textarea:focus {
 	margin-top: 56px;
 	&__item {
 		margin-right: 20px;
-    	border: 1px solid #ececec;
-	    border-radius: 100%;
-	    height: 2.4em;
-	    width: 2.7em;
-	    text-align: center;
-	    line-height: 2.2em;
-	    transition: .4s;
+		border: 1px solid #ececec;
+		border-radius: 100%;
+		height: 2.3em;
+		width: 2.7em;
+		text-align: center;
+		line-height: 2.3em;
+		transition: .4s;
 	    &:hover {
 			border: 1px solid #b8d6ff;
 			text-decoration: none;		
@@ -2069,9 +2252,25 @@ textarea:focus {
 	}
 		&__accessories-item {
 		margin-top: 34px;
+		& a {
+			text-decoration: none;
+			&:hover {text-decoration: none;}
+		}
 	}
 	&__accessories-picture {
 		border-radius: 6px;
+		user-select: none;
+	}
+	a {
+		text-decoration: none;
+		&:hover {text-decoration: none;}
+	}
+	&__accessories-desc {
+
+		&:hover .my-basket__accessories-heading {
+			text-decoration: underline;
+			color: #353233;
+		}
 	}
 	&__accessories-heading {
 		font-family: $PNSB;
@@ -2089,21 +2288,27 @@ textarea:focus {
 		color: #3e3b3c;
 		text-align: center;
 		margin: 0 auto;
+		user-select: none;
+		& span.svg-ruble{
+			background-color: #3e3b3c;
+			height: 14px;
+    		margin-bottom: 4px;	
+		}
 	}
 	&__accessories-counter {
 		font-family: $PNSB;
 		font-size: 16px;
 		color: #231f20;
-		/* & span:nth-child(odd) {
-			margin: 4px 28px;
-		} */
+		user-select: none;
+
 	}
 	&__box {
 	    border-radius: 50%;
 	    margin: -2px 18px;
-	    padding: 2px 9px;
+	    padding: 1px 9px;
 	    transition: .4s;
 	    z-index: 2;
+	    user-select: none;
 	    &:hover{
 			background-color: #ffffff;
 	    }
@@ -2232,6 +2437,12 @@ textarea:focus {
 	margin-top:-5px;
 	&__item {
 		margin-top: 37px;
+		& a {
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 	&__picture{
 
@@ -2240,6 +2451,9 @@ textarea:focus {
 		font-family: $PNSB;
 		font-size: 18px;
 		color: #3e3b3c;
+	}
+	&__desc:hover .basket-orders__heading {
+		text-decoration: underline;
 	}
 	&__intro {
 		font-family: $PNL;
@@ -2252,6 +2466,7 @@ textarea:focus {
 		color: #8c8c8c;
 	    white-space: nowrap;
 	    line-height: 30px;
+	    user-select: none;
 	}
 	&__track{
 		font-size: 14px;
@@ -2263,6 +2478,11 @@ textarea:focus {
 		font-family: $PNSB;
 		font-size: 18px;
 		white-space: nowrap;
+		& .svg-ruble {
+			background-color: #212529;
+		    height: 15px;
+		    margin-bottom: 4px;
+		}
 	}
 	&__open-btn {
 		& a {
@@ -2272,20 +2492,120 @@ textarea:focus {
 			transition: .4s;
 			&:hover{
 				text-decoration: underline;
-				color: #7c7c7d
+				color: #5b9aef;
 			}
 		}
 	}
 
 }
-.svg-ruble {
-	color: #3e3b3c;
-	height: 16px;
-}
-/* Pay&Reg Page */
-.reg-info {
 
+/* Pay&Reg Page */
+.small-desk {
+	font-family: $PNB;
+	font-size: 13px;
+	color: #bebebe;
+	text-transform: uppercase;
 }
+.reg-info {
+	&__body {
+		padding-top: 36px;
+	}
+	&__tab-content {
+		padding-top: 81px;
+	}
+	&__form {
+		padding-top: 11px;
+	}
+	&__main-title {
+		font-family: $PNR;
+		font-size: 40px;
+		color: #3e3b3c;
+		line-height: 20px;
+	}
+	&__form-special-item {
+		margin-top: 31px;
+		& label {
+			margin-left: 8px;
+		    font-family: Proxima Nova Bold,Ubuntu,Arial,sans-serif;
+		    font-size: 13px;
+		    color: #777;
+		    text-transform: uppercase;
+		}
+	}
+	&__form-item {
+		margin-top: 21px;
+		& label {
+			margin-left: 8px;
+		    font-family: Proxima Nova Bold,Ubuntu,Arial,sans-serif;
+		    font-size: 13px;
+		    color: #777;
+		    text-transform: uppercase;
+		}
+	}
+	&__menu {
+		margin-top: 2vh;
+	}
+	&__item {
+		margin-top: 23px;
+	}
+	&__picture {
+		& img {
+			width: 100%;
+			border-radius: 14px;
+		}
+	}
+	&__second-title {
+		font-family: $PNR;
+		font-size: 20px;
+		color: #3e3b3c;
+	}
+	&__title {
+    	line-height: 33px;
+		font-family: $PNSB;
+		font-size: 14px;
+		color: #3e3b3c;
+		
+	}
+	&__subtitle {
+		font-family: $PNL;
+		font-size: 12px;
+		color: #8c8c8c;
+	}
+	&__price-title {
+		font-family: $PNL;
+		font-size: 12px;
+		color: #8c8c8c;
+		line-height: 31px;
+	}
+	&__price {
+		font-family: $PNSB;
+		font-size: 14px;
+		color: #3e3b3c;
+		& img.svg-ruble {
+		    height: 15px;
+		    margin-bottom: 4px;			
+		}
+	}
+	&__count {
+		font-family: $PNSB;
+		font-size: 16px;
+		line-height: 25px;
+		color: #231f20;
+	}
+	&__grac {
+		font-family: $PNR;
+		font-size: 40px;
+		color: #3e3b3c;
+	}
+	&__pic {
+		margin-top: 6px;
+	}
+}
+.grac-basket {
+    padding-top: 2.8vh;
+    text-align: center;
+}
+
 /* Blog Page */
 
 .journal {
@@ -2450,6 +2770,12 @@ textarea:focus {
 	    border-radius: 6px;
         padding: 15.5px 33px 15.5px;
 		background-color: #209bf2;
+		transition: .4s;
+		white-space: nowrap;
+		&:hover {
+			background-color: #006dff;
+    		box-shadow: 0 8px 24px 0 rgba(0,109,255,.26);
+		}
 		& span {
 			font-size: 16px;
 			font-family: $PNR;
@@ -2563,6 +2889,7 @@ textarea:focus {
 		font-family: $PNSB;
 		font-size: 20px;
 		color: #fff;
+		user-select: none;
 	}
 	&__list {
 		margin-top: 1vh;
@@ -2658,6 +2985,7 @@ textarea:focus {
 		& svg {
 			width: 15px;
 			color: #5e5b5b;
+			cursor: pointer;
 		}
 	}
 	&__social-media {
@@ -2689,11 +3017,13 @@ textarea:focus {
 	}
 	&__company-info {
 		margin-left: 10px;
+		user-select: none;
 	}
 	&__company-heading {
 		font-family: $PNSB;
 		color: #fff;
 		font-size: 20px;
+		user-select: none;
 	}
 	&__company-subtitle {
 		opacity: .6;
@@ -2702,6 +3032,7 @@ textarea:focus {
 		font-family: $PNL;
 		white-space: nowrap;
 		margin-top: -5px;
+		user-select: none;
 	}
 	&__about {
 		margin-top: 1.4vh;
@@ -2727,8 +3058,49 @@ textarea:focus {
 .mobile {
 	display: none!important;
 }
-
+@media (max-width: 321px) {
+	.product-card__add-button {
+		height: 47px;
+    	width: 47px;
+	    padding: 6px;
+	}
+	.se {
+	    padding-left: 30px;
+	}
+}
 @media (max-width: 480px) {
+	.reg-info__main-title {
+		font-size: 28px;
+	    line-height: 40px;
+	}
+	.reg-info__added {
+		margin-top: 40px;
+	}
+	.reg-info__second-title {
+	    font-size: 22px;
+	}
+	.reg-info__body {
+    	padding-top: 0px;
+	}
+	.delivery-type__intro {
+		margin-left: 0px;
+	}
+	.delivery-type__picture {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.payment-type__intro, .payment-type__intro {
+ 		margin-left: 0;
+	}
+	.delivery-type__body, .payment-type__body {
+		padding: 35px 30px;
+	}
+	.delivery-type__heading, .payment-type__heading, .payment-type__picture {
+		text-align: center;
+	}
+	.payment-type__heading {
+		margin-top: 14px;
+	}
 	.pagination {
 		margin-top: 70px;
 		&__item {
@@ -2809,13 +3181,47 @@ textarea:focus {
 	    position: absolute;
 	    bottom: 23px;
 	}
-
+	.my-basket__accessories-favorite {
+		display: none;
+	}
+	.my-basket__accessories-desc {
+		margin-bottom: 20px;
+	}
+	.my-basket__accessories-picture {
+		margin-bottom: 20px;
+	}
+	.my-basket__accessories-item {
+	    border-bottom: 1px solid #e1e6e9;
+        padding-bottom: 14px;
+	}
+	.basket-orders__picture {
+		margin: 0 auto;
+	}
+	.basket-orders__item {
+		& a {
+			margin: 0 auto;
+		}
+	}
+	.basket-orders__desc {
+		margin: 0 auto;
+		margin-top: 10px;
+	    text-align: center;
+	}
+	.basket-orders__open-btn  {
+		margin-top: 5px;
+		margin-left: -14px;
+	}
+	.basket-orders__item {
+	    margin-top: 37px;
+	    border-bottom: 1px solid #dce3e9;
+	    padding-bottom: 20px;
+	}
+	.my-basket__accessories-price {
+		white-space: nowrap;
+	}
 }
 
-
-
 @media (max-width: 767px) {
-
 	.about-product__accessories-item {
 	    margin-top: 20px;
 	    padding-bottom: 20px;
@@ -2834,11 +3240,6 @@ textarea:focus {
 	.slider-bar {
 		display: none;
 	}
-
-}
-
-
-@media (max-width: 767px) {
 	.desctop-navigation {
 		display: none;
 	}

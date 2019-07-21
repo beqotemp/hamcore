@@ -91,4 +91,12 @@ $(document).ready(function(){
 		$('#search-trigger').addClass('active')		
 		$('#search-form').removeClass('invisability')
 	})
+	if ($("section").hasClass('regpay-page')) {
+		$('#search-trigger').hide()
+	}
+	
 });
+
+/*$('.desctop-navigation__catalog-burger-title').click(function(){
+		$('.ham').click()
+	})*/
