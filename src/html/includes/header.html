@@ -42,10 +42,38 @@
   								</ul>
   							</div>
   						</div>
-						<div class="desctop-navigation__contacts">
+  						<div id="person" class="basket-navigation__account ml-auto">
+			                <div class="basket-navigation__dropdown person-mp">
+			                  <button class="basket-navigation__dropdown-btn person-mp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                    <span class="basket-navigation__account-icon__svg"></span>
+			                    CrazyBearGuilty@yahoo.com
+			                    <span class="basket-navigation__dropdown-icon__svg"></span>
+			                  </button>
+			                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			                    <a href="#">
+			                    	<span class="main-drop d-flex flex-row align-items-center">
+			                    		<span class="basket-navigation__account-icon__svg"></span>
+			                    		<span class="d-flex flex-column">
+			                    			<span class="main-drop__name">
+			                    				Андрей
+			                    			</span>
+			                    			<span class="main-drop__email">
+			                    				CrazyBearGuilty@yahoo.com
+			                    			</span>
+			                    		</span>
+			                    	</span>
+			                    </a>
+			                    <a class="main-dropdown-item" href="#">Мои заказы</a>
+			                    <a class="main-dropdown-item" href="#">Корзина</a>
+			                    <a class="main-dropdown-item" href="#">Избранные товары</a>
+			                    <a class="main-dropdown-item" href="#">Выйти из аккаунта</a>
+			                  </div>
+			                </div>  							
+			  			</div>
+						<div class="desctop-navigation__contacts" style="display:none;">
 							<span><a href="#">8 (977) 644-29-76</a></span>
-  						</div>
-						<div class="desctop-navigation__sign-in-up d-flex flex-row">
+						</div>
+						<div class="desctop-navigation__sign-in-up d-flex flex-row" style="display:none!important">
 							<a href="#">Регистрация</a>
 							<span>/</span>
 							<a href="#">Вход</a>
@@ -91,12 +119,13 @@
 								<li><a href="#">Запчасти</a></li>
 							</ul>
 						</div>
-						<div class="desctop-navigation__favorite">
+						<div class="desctop-navigation__favorite ml-auto">
 							<span class="desctop-navigation__favorite-count">5</span>
 							<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
 						</div>
-						<div class="desctop-navigation__basket-block">
+						<div class="desctop-navigation__basket-block ml-auto">
 							<a href="#" class="desctop-navigation__basket-btn">
+								<span class="desctop-navigation__favorite-count">5</span>
 								<div class="desctop-navigation__basket-btn-background"></div>
 								<span class="desctop-navigation__basket-title">Корзина</span>
 							</a>
@@ -106,7 +135,7 @@
 				<div class="menu-body">
 			  		<div class="container">
 			  			<div class="row">
-			  				<div class="col-xl-3">
+			  				<div class="col-lg-3 col-xl-3">
 			  					<div class="menu-body__item">
 			  						<div class="menu-body__title">
 										<div class="menu-body__icon">
@@ -127,7 +156,7 @@
 			  						</div>
 			  					</div>
 			  				</div>
-			  				<div class="col-xl-3">
+			  				<div class="col-lg-3 col-xl-3">
 			  					<div class="menu-body__item">
 			  						<div class="menu-body__title">
 			  							<div class="menu-body__icon">
@@ -148,7 +177,7 @@
 			  						</div>
 			  					</div>
 			  				</div>
-			  				<div class="col-xl-3">
+			  				<div class="col-lg-3 col-xl-3">
 			  					<div class="menu-body__item">
 			  						<div class="menu-body__title">
 			  							<div class="menu-body__icon">
@@ -162,14 +191,14 @@
 			  							<ul>
 			  								<li><a href="#">Все</a></li>
 			  								<li><a href="#">Для текстильных</a></li>
-			  								<li><a href="#">Для  плоттерных</a></li>
+			  								<li><a href="#">Для плоттерных</a></li>
 			  								<li><a href="#">Для пищевых</a></li>
 			  								<li><a href="#">Для сувенирных</a></li>
 			  							</ul>
 			  						</div>
 			  					</div>
 			  				</div>
-			  				<div class="col-xl-3">
+			  				<div class="col-lg-3 col-xl-3">
 			  					<div class="menu-body__item">
 			  						<div class="menu-body__icon">
 										<img src="img/svg/cog.svg" alt="">
@@ -200,6 +229,125 @@
   		</div>
 
 		<!-- Mobile-nav -->
+		<div class="mobile-navigation">
+			<div class="mobile-navigation__first-lvl">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 col-md-7">
+  							<div class="mobile-navigation__introduction d-flex flex-row align-items-center">
+  								<div class="mobile-navigation__logo">
+  									<img src="img/items/nav-logo.png" alt="">
+  								</div>
+								<div class="mobile-navigation__heading d-flex flex-column">
+									<span class="mobile-navigation__title">
+										Hamcore
+									</span>
+									<span class="mobile-navigation__subtitle">
+										Принтеры и расходники
+									</span>
+								</div>
+  							</div>
+  						</div>
+  						<div class="col-4 col-md-2">
+  							<div class="d-flex flex-row">
+  								<div class="mobile-navigation__item">
+  									<span class="mobile-navigation__account-icon__svg"></span>
+  								</div>
+  								<div class="mobile-navigation__item">
+	  								<div class="mobile-navigation__favorite">
+										<span class="desctop-navigation__favorite-count">5</span>
+										<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-bookmark fa-w-12"><path fill="currentColor" d="M336 0H48C21.49 0 0 21.49 0 48v464l192-112 192 112V48c0-26.51-21.49-48-48-48zm16 456.287l-160-93.333-160 93.333V48c0-8.822 7.178-16 16-16h288c8.822 0 16 7.178 16 16v408.287z" class=""></path></svg>
+									</div>
+  								</div>
+  								<div class="mobile-navigation__item">
+									<div class="mobile-navigation__shop">
+										<span class="desctop-navigation__favorite-count">5</span>
+										<svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18"><path fill="currentColor" d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z" class=""></path></svg>
+									</div>
+  								</div>
+  							</div>
+  						</div>
+						<div class="col-1 col-md-2 mobile-navigation__container">
+							<button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="collapse-btn">
+							<div id="menu-btn" class="desctop-navigation__catalog-triggers d-flex flex-row align-items-center">
+								<span class="desctop-navigation__catalog-burger">
+									<svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="30" onclick="this.classList.toggle('active')">
+									  <path
+									        class="line top"
+									        d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+									  <path
+									        class="line middle"
+									        d="m 70,50 h -40" />
+									  <path
+									        class="line bottom"
+									        d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+									</svg>
+								</span>
+								<span class="mobile-navigation__catalog-burger-title">Каталог товаров</span>
+							</div>
+							</button>
+						</div>
+						<div class="col-12">
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav mr-auto mobile-navigation__collapse-body">
+									<li class="nav-item mobile-navigation__menu-item">
+										<div class="menu-body__icon-m">
+											<img src="img/svg/printer.svg" alt="">
+										</div>
+										<a class="nav-link" href="#">Принтеры</a>
+									</li>
+									<li class="nav-item mobile-navigation__menu-item">
+										<div class="menu-body__icon-m">
+											<img src="img/svg/tint.svg" alt="">
+										</div>
+										<a class="nav-link" href="#">Расходники</a>
+									</li>
+									<li class="nav-item mobile-navigation__menu-item">
+										<div class="menu-body__icon-m">
+											<img src="img/svg/sliders-v.svg" alt="">
+										</div>
+										<a class="nav-link" href="#">Опции</a>
+									</li>
+									<li class="nav-item mobile-navigation__menu-item">
+										<div class="menu-body__icon-m">
+										<img src="img/svg/cog.svg" alt="">
+									</div>
+										<a class="nav-link" href="#">Запчасти</a>
+									</li>
+									<div class="collapse__second-lvl">
+										<li class="nav-item mobile-navigation__second-item">
+											<a class="nav-link disabled" href="#">О магазине</a>
+										</li>	
+										<li class="nav-item mobile-navigation__second-item">
+											<a class="nav-link disabled" href="#">Доставка</a>
+										</li>	
+										<li class="nav-item mobile-navigation__second-item">
+											<a class="nav-link disabled" href="#">Оплата</a>
+										</li>	
+										<li class="nav-item mobile-navigation__second-item">
+											<a class="nav-link disabled" href="#">Контакты</a>
+										</li>	
+										<li class="nav-item mobile-navigation__second-item">
+											<a class="nav-link disabled" href="#">Отзывы</a>
+										</li>	
+										<li class="nav-item mobile-navigation__second-item">
+											<a class="nav-link disabled" href="#">Новости и статьи</a>
+										</li>	
+										<li class="collapse__contacts">
+											<span>
+												<a href="#">8 (977) 644-29-76</a>
+											</span>
+										</li>
+									</div>
+									
+								</ul>
+							</div>							
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
   	</header>
 <main class="Site-content">
 

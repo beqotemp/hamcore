@@ -15,6 +15,10 @@ $(document).ready(function(){
 		$(self).removeClass("active-ie") 
 		},2500);
 	});
+	if ($("div").hasClass('second-header')) {
+		$(".basket-navigation__dropdown").removeClass('person-mp')
+		$(".basket-navigation__dropdown-btn").removeClass('person-mp')
+	}
 });
 /* FAVORITE */
 $(document).ready(function(){

@@ -11,12 +11,12 @@
   <body class="Site">
   	<header>
 		<!-- Desctop-nav -->
-  		<div class="desctop-navigation">
+  		<div class="desctop-navigation-second">
         <div class="desctop-navigation__basket-lvl">
   				<div class="container">
   					<div class="row">
 
-  						<div class="col-lg-2 col-xl-2 d-flex align-items-center">
+  						<div class="col-6 col-md-3 col-lg-2 col-xl-2 d-flex align-items-center">
   							<div class="desctop-navigation__introduction d-flex flex-row align-items-center">
   								<div class="desctop-navigation__logo">
   									<img src="img/items/nav-logo.png" alt="">
@@ -32,13 +32,13 @@
   						  </div>
   					  </div>
 
-    					<div class="col-lg-2 col-xl-2">
-  								<div class="basket-btn desktop">
+    					<div class="col-6 col-md-2 col-lg-2 col-xl-2">
+  								<div class="basket-btn">
                     <a href="#">Вернуться</a>
                   </div>
   						</div>
 
-              <div class="col-xl-4 no-l-padding">
+              <div class="col-lg-2 col-xl-4 d-none d-lg-block no-l-padding">
                 <div class="basket-navigation__search-block">
                   <form id="search-form" class="invisability">
                     <svg id="search-trigger" class="" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-search fa-w-16"><path fill="currentColor" d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z" class=""></path></svg>
@@ -46,21 +46,35 @@
                   </form>
                 </div>
               </div>					
-
-  						<div class="basket-navigation__account ml-auto">
-                <div class="basket-navigation__dropdown">
-                  <button class="basket-navigation__dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="basket-navigation__account-icon__svg"></span>
-                    CrazyBearGuilty@yahoo.com
-                    <span class="basket-navigation__dropdown-icon__svg"></span>
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </div>  							
-  						</div>
+              
+              <div id="person" class="basket-navigation__account ml-auto">
+                      <div class="basket-navigation__dropdown person-mp">
+                        <button class="basket-navigation__dropdown-btn person-mp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="basket-navigation__account-icon__svg"></span>
+                          CrazyBearGuilty@yahoo.com
+                          <span class="basket-navigation__dropdown-icon__svg"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a href="#">
+                            <span class="main-drop d-flex flex-row align-items-center">
+                              <span class="basket-navigation__account-icon__svg"></span>
+                              <span class="d-flex flex-column">
+                                <span class="main-drop__name">
+                                  Андрей
+                                </span>
+                                <span class="main-drop__email">
+                                  CrazyBearGuilty@yahoo.com
+                                </span>
+                              </span>
+                            </span>
+                          </a>
+                          <a class="main-dropdown-item" href="#">Мои заказы</a>
+                          <a class="main-dropdown-item" href="#">Корзина</a>
+                          <a class="main-dropdown-item" href="#">Избранные товары</a>
+                          <a class="main-dropdown-item" href="#">Выйти из аккаунта</a>
+                        </div>
+                      </div>                
+              </div>
 
   					</div>
   				</div>
