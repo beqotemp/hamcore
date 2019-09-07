@@ -1,0 +1,132 @@
+<%= _.template(require('./../includes/header.html'))() %>
+<section id="order-page" class="order-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <span class="contacts__title">
+                    Заказ №322
+                </span>
+            </div>
+        </div>
+        <div class="order-page__wrappeer">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="reg-info__added">
+                        <div class="reg-info__heading">
+                            <span class="reg-info__second-title">
+                                Информация о заказе
+                            </span>
+                        </div>
+                    </div>
+                    <div class="orders-info">
+                        <div class="orders-info__item d-flex flex-row">
+                            <span>Дата совершения заказа:</span>
+                            <span>12.12.2012</span>
+                        </div>
+                        <div class="orders-info__item d-flex flex-row">
+                            <span>Трек номер отслеживания:</span>
+                            <span>gtxsdadkl2354812</span>
+                        </div>
+                        <div class="orders-info__item d-flex flex-row">
+                            <span>Статус оплаты:</span>
+                            <span><span class="green">Оплачен</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 offset-xl-1">
+                    <div class="reg-info__added">
+                        <div class="reg-info__heading">
+                            <span class="reg-info__second-title">
+                                Товары в заказе
+                            </span>
+                        </div>
+                    </div>
+                    <div class="reg-info__body">
+                        <!-- reg info item -->
+                        <div class="reg-info__item">
+                            <div class="row">
+                                <div class="col-4 col-md-2 col-xl-2 d-flex align-items-center">
+                                    <div class="reg-info__picture">
+                                        <img src="img/products/first.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-7 col-md-4 col-lg-3 col-xl-4 d-flex align-items-center">
+                                        <div class="reg-info__heading d-flex flex-column">
+                                            <span class="reg-info__title">Hamcoke Brookesia</span>
+                                            <span class="reg-info__subtitle">Принтер, Текстильный</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 col-md-3 col-lg-2 col-xl-3 d-flex align-items-center">
+                                        <div class="reg-info__item-info d-flex flex-column">
+                                            <span class="reg-info__price-title">Цена</span>
+                                            <span class="reg-info__price">
+                                                130 000
+                                                <img class="svg-ruble" src="img/svg/ruble.svg" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-1 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <div class="reg-info__counter d-flex flex-column">
+                                            <span class="reg-info__subtitle">Шт</span>
+                                            <span class="reg-info__count">1</span>
+                                        </div>
+                                    </div>
+                            </div> 
+                        </div>
+                        <!-- reg info item END --> 
+                        <!-- reg info item -->
+                        <div class="reg-info__item">
+                            <div class="row">
+                                <div class="col-4 col-md-2 col-xl-2 d-flex align-items-center">
+                                    <div class="reg-info__picture">
+                                        <img src="img/products/first.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-7 col-md-4 col-lg-3 col-xl-4 d-flex align-items-center">
+                                        <div class="reg-info__heading d-flex flex-column">
+                                            <span class="reg-info__title">Hamcoke Brookesia</span>
+                                            <span class="reg-info__subtitle">Принтер, Текстильный</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 col-md-3 col-lg-2 col-xl-3 d-flex align-items-center">
+                                        <div class="reg-info__item-info d-flex flex-column">
+                                            <span class="reg-info__price-title">Цена</span>
+                                            <span class="reg-info__price">
+                                                130 000
+                                                <img class="svg-ruble" src="img/svg/ruble.svg" alt="">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-md-1 col-lg-3 col-xl-3 d-flex align-items-center">
+                                        <div class="reg-info__counter d-flex flex-column">
+                                            <span class="reg-info__subtitle">Шт</span>
+                                            <span class="reg-info__count">1</span>
+                                        </div>
+                                    </div>
+                            </div> 
+                        </div>
+                        <!-- reg info item END --> 
+                        <!-- reg info item -->
+                        <div class="order-amount">
+                            <div class="d-flex flex-row">
+                                <div class="order-amount__item">
+                                    <span>Cумма заказа:</span>
+                                </div>
+                                <div class="order-amount__item-second">
+                                    <span>
+                                        322000
+                                        <img class="svg-ruble" src="img/svg/ruble.svg" alt="">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- reg info item END --> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <%= _.template(require('./../includes/footer.html'))() %>

@@ -3126,6 +3126,127 @@ textarea:focus {
 
 }
 
+
+
+
+
+
+// 404 Page 
+.fhaf-page {
+	text-align:center;
+	padding-top: 9vh;
+    padding-bottom: 10vh;
+}
+.fhaf-page__title {
+	font-family: Proxima Nova Regular,Ubuntu,Arial,sans-serif;
+    color: #c8ccd1;
+    font-size: 22px;
+}
+.fhaf-page__intro {
+	font-family: Proxima Nova Regular,Ubuntu,Arial,sans-serif;
+    color: #c8ccd1;
+    font-size: 12rem;
+    line-height: 13.5rem;
+}
+
+
+.fhaf-page__subtitle {
+	font-family: Proxima Nova Light,Ubuntu,Arial,sans-serif;
+    font-size: 16px;
+    color: #8e9093;
+    line-height: 22px;
+ }
+
+ // Reset password
+ .reset {
+	padding-top: 121px;
+    padding-bottom: 15.6vh;
+ }
+.reset__subtitle {
+	font-family: Proxima Nova Light,Ubuntu,Arial,sans-serif;
+ 	font-size: 16px;
+ 	line-height: 25px;
+	color: #868484;
+	margin-top: 20px;
+}
+.reset .sign-in__form-item label, .reset .sign-in__input {
+	margin-left: 0px;
+}
+.reset .sign-in__title {
+	line-height: 42px;
+}
+// order-page
+.order-page {
+	padding-top: 4rem;
+	padding-bottom: 8rem;
+}
+.order-page__wrappeer {
+	padding-top: 2rem;
+}
+
+.order-page .reg-info__body {
+	padding-top: 0px;
+}
+.orders-info {
+	margin-top: 23px;
+}
+.orders-info__item {
+	user-select: none;
+	line-height: 33px;
+	font-family: Proxima Nova Semibold,Ubuntu,Arial,sans-serif;
+	font-size: 14px;
+	color: #3e3b3c;
+}
+.orders-info__item > span:nth-child(2) {
+	margin-left:3px;
+	user-select: none;
+	line-height: 33px;
+	font-size: 14px;
+	font-family: Proxima Nova Light,Ubuntu,Arial,sans-serif;
+    color: #8c8c8c;
+}
+.order-amount {
+	margin-top: 42px;
+}
+.order-amount__item-second > span > img.svg-ruble {
+    display: inline-block;
+    width: 11px;
+    vertical-align: middle;
+    height: 17px;
+    -webkit-mask: url(../img/svg/ruble.svg) no-repeat center;
+    mask: url(../img/svg/ruble.svg) no-repeat center;
+    transition: .4s ease;
+    user-select: none;
+    margin-bottom: 1px;
+}
+.order-amount__item {
+	user-select: none;
+    line-height: 33px;
+    font-family: Proxima Nova Semibold,Ubuntu,Arial,sans-serif;
+    font-size: 18px;
+    color: #3e3b3c;
+}
+.order-amount__item-second { 
+	user-select: none;
+    line-height: 33px;
+    font-family: Proxima Nova Semibold,Ubuntu,Arial,sans-serif;
+    font-size: 20px;
+    color: #3e3b3c;
+    margin-left: 8px;
+}
+// favorite popup
+.favorite-popup {
+	font-family: Proxima Nova Regular,Ubuntu,Arial,sans-serif;
+    color: #8c8c8c;
+    font-size: 14px;
+    text-align: center;
+}
+.product-card__favorite {
+	position: relative;
+}
+.tooltip-cart, .tooltip-inner {
+	width:auto!important;
+}
 /* Footer */
 .footer {
 	background-color: #3d3c3c;
